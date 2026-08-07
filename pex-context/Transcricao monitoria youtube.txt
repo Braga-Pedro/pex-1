@@ -1,0 +1,815 @@
+# tactiq.io free youtube transcript
+# 03/11/2025 -  Monitoria PEX Gestao e Teologia - 25.4
+# https://www.youtube.com/watch/MZ7BKJOcdAs
+
+00:14:42.839 Boa noite, pessoal. Vamos esperar só
+00:14:44.920 mais uns 5 minutinhos
+00:14:47.360 para ver se o pessoal vai entrar e a
+00:14:48.959 gente já começa, tá bom?
+00:18:25.280 Acho que o pessoal foi entrando. Eu vou
+00:18:27.360 começar aqui, tá bom? Eh, para quem não
+00:18:30.120 me conhece, meu nome é Leandro. Eu sou
+00:18:32.000 um dos monitores desse novo ciclo do
+00:18:34.039 Plex. Aqui junto comigo eu tenho a
+00:18:36.080 Paloma. Nós somos os monitores que a
+00:18:38.480 gente vai acompanhar vocês no PEX.
+00:18:40.039 Então, qualquer dúvida que vocês tiverem
+00:18:42.240 quanto ao PEX durante essa esse semestre
+00:18:45.080 até o final do ano, podem estar
+00:18:47.000 perguntando a gente, tá? podem estar
+00:18:49.039 chamando eh por aqui. Então, a gente se
+00:18:50.960 encontra aqui todas as segundas às 19
+00:18:53.600 horas, então justamente para tirar
+00:18:55.919 dúvida. Então, a gente tem um tempo no
+00:18:57.440 final de bate-papo. Então, eh, se você
+00:18:59.720 tem alguma dúvida específica do PEX, a
+00:19:01.559 gente abre o microfone para vocês
+00:19:03.240 poderem estar falando, vocês mandarem
+00:19:04.919 aqui no chat, eh, só para vocês
+00:19:07.240 entenderem o dinâmica. Se quiserem ao
+00:19:09.280 longo da da apresentação e mandando suas
+00:19:11.799 dúvidas no chat, pode ficar à vontade.
+00:19:14.159 Eh, fica sempre um instrutor no chat e
+00:19:16.080 um instrutor aqui apresentando para
+00:19:17.600 vocês e no final a gente abre para
+00:19:19.200 perguntas, tá?
+00:19:21.320 Eh, e fora isso, se você eh para quem tá
+00:19:24.200 no grupo de teologia, eu tiro as
+00:19:26.320 dúvidas. para quem tá no grupo também na
+00:19:28.880 a gente tem um grupo no
+00:19:31.280 Telegram, então que a gente e a gente
+00:19:33.360 outros monitores também tiram a dúvida
+00:19:35.039 de vocês e até própria nossa orientadora
+00:19:37.320 tá lá dentro do do Telegram e ajuda
+00:19:40.600 vocês nesse processo de dúvidas. Fora
+00:19:43.120 isso, também a gente tem um uma tabela
+00:19:45.720 que vocês podem mandando as dúvidas de
+00:19:47.640 vocês, que é justamente a gente pega
+00:19:49.440 essas principais dúvidas e pauta eh na
+00:19:52.400 reunião. Então toda monitoria ela é
+00:19:54.000 pautada num tema. Esse tema a gente
+00:19:56.080 extrai dessas dúvidas que vocês colocam
+00:19:57.960 nesses formulários, que é uma planilha
+00:19:59.960 de Excel que você vai preenchendo ali
+00:20:01.320 com as suas dúvidas. A gente pega os
+00:20:02.880 principais tópicos e tira as dúvidas
+00:20:05.280 aqui. Mas nada impede que se você tiver
+00:20:07.240 alguma dúvida em específica e no final
+00:20:09.120 você queira tirar, você pode abrir o
+00:20:10.559 microfone ou mandar no chat que a gente
+00:20:12.720 tirar dúvida para vocês, tá? Eh, então
+00:20:15.919 vamos lá, vamos começar aqui falando um
+00:20:18.200 pouquinho da monitoria. Então, aquilo
+00:20:20.400 que eu expliquei, todas as segundas às
+00:20:22.000 19 horas aqui vão ter dois links para
+00:20:24.760 vocês, que é igual eu expliquei, esse
+00:20:27.200 aqui, esse primeiro é o link de o
+00:20:28.799 formulário para vocês tirarem as dúvidas
+00:20:31.120 de vocês. E aqui a gente tem a
+00:20:33.240 comunidade do Telegram. Então, vocês
+00:20:35.200 escaneando SQR code, dá direto aqui na
+00:20:37.280 comunidade do Telegram, vocês conseguem
+00:20:39.880 acessar a comunidade com todas as
+00:20:41.880 pessoas que estão o curso de gestão,
+00:20:43.640 teologia, todas as áreas, elas estão lá
+00:20:46.120 eh referente ao PEX. E aqui o formulário
+00:20:49.559 de dúvidas. Se vocês tiverem dúvidas,
+00:20:51.000 vocês podem escanear e e lançar a dúvida
+00:20:54.200 de vocês lá, que a gente pega as
+00:20:55.480 principais e traz para esses encontros
+00:20:57.760 essas monitorias. A monitoria, gente,
+00:21:00.159 não é todos os cursos, tá? A gente
+00:21:02.120 divide as monitorias para ficar uma
+00:21:03.840 coisa mais estratégica e facilitar vocês
+00:21:06.360 é por áreas. Então, essa aqui a gente
+00:21:07.919 faz todos os alunos de teologia e de
+00:21:10.400 gestão e tem outras que são voltadas
+00:21:12.480 para para áreas de engenharia, ciências
+00:21:15.120 da computação e assim por diante pra
+00:21:17.279 gente ter o controle, né? Não ficar uma
+00:21:19.080 turma muito grande, a gente conseguir
+00:21:20.360 tirar a dúvida de todo mundo. Então, o
+00:21:22.960 que que é um projeto de extensão, né?
+00:21:25.640 Ele também é conhecido como atividade
+00:21:27.760 extensionista ou extensão universitária.
+00:21:30.039 É uma modalidade acadêmica que os
+00:21:31.640 estudantes podem para aplicar os
+00:21:33.320 conhecimentos. Então, como que funciona,
+00:21:36.000 né? A gente pensa aí, olhando hoje pras
+00:21:38.320 nas faculdades de graduação, a gente
+00:21:40.720 busca, eu eu faço muito uma analogia com
+00:21:43.840 eh um carro, com uma autoescola. Você
+00:21:45.480 quer aprender primeiro a dirigir um um
+00:21:47.840 carro, o que que você tem que fazer
+00:21:48.960 primeiro? Você tem que pagar lá a
+00:21:50.720 mensalidade da autoescola, né? Fazer
+00:21:52.720 todas as os testes de saúde que você
+00:21:55.520 precisa, né? Os exames médicos e aí você
+00:21:58.120 vai se inscrever ali na na auto aescola.
+00:22:00.080 Então ali você vai ganhar o quê? Você
+00:22:01.440 vai adquirir o quê? um conhecimento.
+00:22:03.320 Então você vai assistir a aula de de
+00:22:05.279 legislação, aprender o que que é um
+00:22:07.120 virar pra esquerda, virar pra direita,
+00:22:08.919 onde você pode, o que que significa
+00:22:10.720 sinal vermelho, sinal amarelo, sinal
+00:22:12.400 verde. Então você adquiri conhecimento,
+00:22:14.720 da mesma forma que vocês na graduação
+00:22:16.400 que vocês escolheram, da área que vocês
+00:22:17.960 escolheram, sejam teologia ou gestão,
+00:22:20.520 vocês vão estar desenvolvendo,
+00:22:21.960 adquirindo um determinado conhecimento
+00:22:23.640 na área específica que vocês designaram.
+00:22:26.320 Só que além do conhecimento, quando você
+00:22:28.039 vai lá, pega todo o conhecimento, testa
+00:22:30.200 ele na prova da autoescola e passa, você
+00:22:32.520 tem que depois fazer suas aulas
+00:22:33.919 práticas, que ali você vai desenvolver
+00:22:35.480 sua habilidade. E aí, da mesma forma
+00:22:38.279 vocês têm a teoria, mas vocês precisam
+00:22:40.480 desenvolver essa habilidade prática. E
+00:22:42.440 aí, o que que eu descompli que ela fez?
+00:22:43.720 Ela criou esse projeto de extensão para
+00:22:45.440 vocês justamente desenvolverem essas
+00:22:47.720 habilidades práticas que ali você vai
+00:22:49.600 numa aula de direção de autoescola, né,
+00:22:51.360 você vai aprender, né, a fazer o break,
+00:22:54.640 você vai aprender a fazer um um
+00:22:56.520 estacionar, você vai aprender ali várias
+00:22:58.559 coisas ali, várias técnicas para você
+00:23:00.679 dirigir um carro. Eh, e da mesma forma
+00:23:02.960 que você vai precisar de adquirir
+00:23:04.240 habilidades para você apresentar no
+00:23:05.840 mercado de trabalho quando você formar.
+00:23:07.600 Então você precisa mostrar pro mercado
+00:23:09.279 de trabalho, você precisa mostrar pra
+00:23:10.640 empresa que você vai entrar, que você
+00:23:12.240 tem aquelas habilidades necessárias e
+00:23:13.840 como que você faz isso através do PEX. E
+00:23:16.559 fora ali você tendo essas habilidades, a
+00:23:18.400 gente chama que é o Chave, né? São as
+00:23:19.600 atitudes, os valores e as experiências.
+00:23:21.640 Os valores de cada um podem mudar
+00:23:23.200 conforme ele o tempo e a experiência que
+00:23:25.200 vocês adquiriram. Então, com projeto
+00:23:27.120 vocês conseguem adquirir habilidade,
+00:23:28.559 vocês conseguem também adquirir a
+00:23:30.200 experiência necessária para vocês
+00:23:31.559 ingressarem dentro do mercado de
+00:23:33.039 trabalho, tá? Então, não é só uma
+00:23:34.760 teoria. Então você ter somente teoria às
+00:23:37.080 vezes não vai ajudar você dentro do
+00:23:38.640 mercado de trabalho, mas você precisa
+00:23:40.039 ter essa habilidade técnica, essa
+00:23:42.080 experiência, essa habilidade para você
+00:23:44.039 ingressar. E isso é uma forma. O PEX,
+00:23:46.320 ele é obrigatório, muita gente pergunta,
+00:23:48.039 ele é obrigatório. Todas as faculdades a
+00:23:50.760 distância AD, elas precisam, de acordo
+00:23:53.240 com o MEC, ter uma carga horária
+00:23:56.200 presencial. E o que que a descomplica
+00:23:58.159 fez para vocês adquirirem essa carga
+00:24:00.240 horária, para elas não colocarem vocês?
+00:24:02.159 Ah, toda sexta vocês têm que ir num
+00:24:04.080 polo, assistir uma aula X. Não, ela
+00:24:07.000 desenvolveu, achou isso mais prático
+00:24:08.559 para que vocês consigam eh realizar isso
+00:24:11.760 através de um projeto de extensão.
+00:24:13.480 Então, ali durante um semestre você vai
+00:24:15.640 ter que ir numa instituição, dependendo
+00:24:17.400 aí eu vou explicar mais para frente, tá?
+00:24:19.320 como que funciona eh ir numa instituição
+00:24:21.600 fazer um determinado projeto. Então você
+00:24:24.679 tem que ir lá e você tem que ter essa
+00:24:26.120 carga horária mínima aí presencial
+00:24:28.159 dentro da instituição. Então por isso
+00:24:29.960 que ele é obrigatório e por isso que ele
+00:24:31.799 é presencial, tá? A partir do segundo
+00:24:34.440 período.
+00:24:36.440 E aí o que que vocês vão fazer nesse
+00:24:38.080 projeto? Ele pode ser realizado numa
+00:24:39.600 organização sem fins lucrativos, uma
+00:24:41.440 escola, hospitais, igrejas. Então vai
+00:24:43.880 depender, gente, da área de de atuação
+00:24:45.720 que vocês estão. Então se vocês estão
+00:24:47.360 cursando teologia, vocês podem fazer
+00:24:49.279 dentro da sua igreja local, não tem
+00:24:50.760 problema. Vocês estão cursando teologia,
+00:24:52.320 pode fazer dentro de uma escolar. Eu tô
+00:24:53.799 fazendo gestão financeira. Perfeito.
+00:24:56.360 Você pode fazer a gestão financeira de
+00:24:57.679 um colégio, você pode fazer a gestão
+00:24:58.919 financeira de um hospital, você pode
+00:25:00.200 pegar e fazer uma gestão financeira de
+00:25:02.080 uma igreja. Então você pode atuar em
+00:25:03.880 várias áreas ali, você não tá preso
+00:25:06.039 diretamente ali a uma determinada área.
+00:25:08.919 Um dos pontos que muitas pessoas
+00:25:10.399 perguntam: &quot;Ah, eu tenho o meu próprio
+00:25:12.200 CNPJ, eu tenho minha própria empresa, eu
+00:25:14.799 posso fazer dentro dela?&quot; A gente
+00:25:16.600 recomenda que não. Não é recomendado que
+00:25:18.360 você faça. A gente não permite isso
+00:25:20.720 porque é dentro do mesmo CNPJ seu por
+00:25:22.600 uma questão de ética. Ah, mas eu tenho
+00:25:24.679 instalar um tio que tem uma empresa.
+00:25:26.159 Posso fazer? Pode, não tem problema
+00:25:27.760 nenhum fazer isso dentro da empresa de
+00:25:30.240 um terceiro que seja ME, que seja CNPJ,
+00:25:32.840 não tem problema nenhum, mas vocês
+00:25:34.559 precisam lá, vocês precisam preencher
+00:25:36.559 alguns documentos que mais à frente eu
+00:25:38.760 vou falar. Só que o projeto de extensão
+00:25:40.760 de vocês, eles têm que estar voltado
+00:25:42.440 diretamente paraa área de atuação de
+00:25:44.360 vocês. Não adianta eu que estou cursando
+00:25:46.120 teologia querer fazer um projeto de
+00:25:47.679 extensão sobre medicina, ah, fazer um
+00:25:49.760 projeto de extensão sobre matemática.
+00:25:51.640 Não faz sentido porque não tá dentro da
+00:25:53.600 minha grade curricular, não tá
+00:25:55.320 diretamente ligado ao meu curso, à minha
+00:25:56.840 área de atuação, não precisa estar
+00:25:58.720 diretamente associado.
+00:26:02.080 Então o que que você tem que fazer? A
+00:26:04.039 gente fala que vocês t que seguir o
+00:26:05.520 roteiro. A gente tem provavelmente uma
+00:26:07.840 mudança que tá acontecendo. A gente tá
+00:26:09.399 esperando só a nossa coordenadora fazer
+00:26:11.039 essa confirmação pra gente, que é da
+00:26:13.320 plataforma. Então, o pessoal que já
+00:26:15.880 ingressou, que está ainda no finalizando
+00:26:18.080 o semestre, né, o seu semestre ainda,
+00:26:20.399 você não iniciou o seu semestre agora,
+00:26:22.760 vocês vão estar na antiga plataforma que
+00:26:24.640 é a plataforma da work,
+00:26:27.039 que é uma plataforma que você clica lá
+00:26:28.840 na dentro da aba da descomplica vai ter
+00:26:31.000 projeto de extensão, você clica lá em
+00:26:32.679 projeto de extensão, ele vai migrar para
+00:26:35.080 uma outra plataforma, para outro site
+00:26:36.480 que é chamado Work Love. Dentro desse
+00:26:38.760 site vai ter um uma plataforma lá de
+00:26:40.840 extensão e os projetos de extensão que
+00:26:42.880 você tem. para quem tá ingressando
+00:26:44.919 agora, né? Então, você tá iniciando o
+00:26:47.120 seu semestre agora, você não fez ainda
+00:26:48.880 nenhum curso, nenhuma matéria, já é uma
+00:26:51.320 plataforma diferente que é a Emelec. É
+00:26:53.320 uma plataforma que ela é integrada
+00:26:55.000 dentro do sistema da descomplica ali das
+00:26:58.840 matérias. Por que que a faculdade ela
+00:27:00.960 está mudando a plataforma? Não sei se
+00:27:03.399 vocês já repararam para quem tá mais
+00:27:05.679 tempo, mais semestres,
+00:27:08.000 quando vocês eh entravam lá na work, eh,
+00:27:11.520 por exemplo, eu fiz o 1, aí eu entrei no
+00:27:13.799 próximo semestre para fazer o PEX 2,
+00:27:15.440 aparecia o PEX 1 para eu fazer e o 2,
+00:27:17.360 ele repetia sempre o pack anterior para
+00:27:20.000 vocês fazerem, porque isso era um erro
+00:27:21.520 da plataforma. Então, em virtude de eh
+00:27:24.480 otimizar e melhorar eh
+00:27:27.880 a didática ali com vocês, ficou mais
+00:27:30.000 fácil eles criarem uma uma outra
+00:27:31.799 plataforma que não acontecesse esse
+00:27:33.240 erro. Então eles estão trazendo a Melec,
+00:27:35.039 que é uma outra plataforma, mas quem
+00:27:36.880 ainda tem um PEX dentro da Orcalov é
+00:27:39.559 para concluir o PEX dentro da Orcalov.
+00:27:41.519 Quem já liberou na Emelec pode fazer
+00:27:43.519 através da Emelec, não tem problema
+00:27:45.000 nenhum. Como que funciona o primeiro
+00:27:47.360 semestre? Se você está no seu primeiro
+00:27:49.120 semestre, o primeiro que você vai fazer,
+00:27:51.080 o seu ele é um teórico, ele não é um
+00:27:53.799 prático. Vocês vão ter um roteiro lá que
+00:27:56.600 vai ter, vocês vão abrir esse roteiro e
+00:27:58.960 aí vocês vão precisar de escolher um um
+00:28:01.440 trabalho acadêmico voltado pra área de
+00:28:03.440 vocês. Ah, não tem a minha área exata,
+00:28:06.399 não tem o meu curso exato, no trabalho
+00:28:07.919 lá, pode ser algo parecido, igual, por
+00:28:09.559 exemplo, não tem referente a teologia,
+00:28:11.320 mas você pode pegar alguma coisa tem eh
+00:28:13.799 ONGs ou coisas com fins lucs lucrativos.
+00:28:17.120 E aí você pode fazer o trabalho em cima
+00:28:18.640 daquilo. Você vai pegar e vai fazer um
+00:28:20.360 resumo de tudo aquilo que vocês
+00:28:22.640 desenvolveram,
+00:28:24.240 né? Fazer com os principais tópicos. No
+00:28:26.519 final tem três perguntas e vocês
+00:28:28.320 precisam responder essas três perguntas.
+00:28:30.600 Quando vocês forem enviar o trabalho de
+00:28:32.320 vocês, precisa do quê? Vocês precisam
+00:28:35.080 dar foto do artigo que vocês escolheram.
+00:28:37.720 Vocês precisam fazer um resumo desse
+00:28:39.679 artigo detalhado e vocês precisam
+00:28:41.919 responder essas três perguntas dentro
+00:28:43.600 desse mesmo documento e anexar. Fora
+00:28:46.440 isso, você precisa eh de uma
+00:28:49.399 autorização, né? E aí são pros próximos
+00:28:51.960 das empresas que você vai, por exemplo,
+00:28:54.760 ir. Por exemplo, eu já estou no do
+00:28:56.720 segundo semestre em diante, vocês vão
+00:28:58.080 fazer o PEX prático. Como que é o PEX
+00:29:00.120 prático? Você vai ter que pegar um
+00:29:01.960 problema. Então, por exemplo, a empresa,
+00:29:03.720 sei lá, eh, X, ela tá com problema
+00:29:06.840 financeiro, ela tem um déficit
+00:29:08.240 financeiro. Eu vou solucionar esse
+00:29:10.279 déficit financeiro dessa empresa. Então,
+00:29:12.360 eu vou pegar indicadores. Ah, como que
+00:29:13.840 eu sei que ela tá com déficit
+00:29:14.760 financeiro? Ah, porque eu tenho esse e
+00:29:16.320 esse, esse e esse dado. Ah, beleza. Eu
+00:29:18.640 identifiquei qual que é o problema.
+00:29:20.000 Agora, como que eu vou paraa solução?
+00:29:21.320 Ah, eu vou fazer um treinamento, eu vou
+00:29:23.480 fazer alguma coisa, fazer uma palestra
+00:29:26.159 para poder resolver isso e aí você vai
+00:29:28.000 desenvolver o seu trabalho em cima
+00:29:29.159 disso. Então ele tem que ter o problema,
+00:29:31.840 qual que é o desenvolvimento ali, o que
+00:29:33.279 que você vai colocar em prática para
+00:29:35.039 resolver aquele problema e a conclusão
+00:29:37.360 daquele problema que você está
+00:29:38.840 solucionando daquela empresa. Fora isso,
+00:29:41.159 você precisa de duas fotos que identifou
+00:29:43.480 que você foi ao local da empresa. Ah, eu
+00:29:45.760 tenho que fazer a carga horária toda do
+00:29:47.279 PEX, sei lá, 30 horas. Não, você pode ir
+00:29:49.559 na empresa uma única vez, mas você tem
+00:29:50.960 que ir presencialmente coletar as
+00:29:52.960 informações, nem que seja você tira uma
+00:29:55.000 foto você fazendo um relatório ali na
+00:29:57.399 empresa, uma foto na frente da empresa,
+00:29:59.600 de uma forma que comprove que você foi
+00:30:01.200 presencialmente nessa empresa,
+00:30:04.000 fez e e vai pontuar trazendo as suas
+00:30:06.960 conclusões referente à empresa. Então
+00:30:09.039 são duas fotos, o relatório tero
+00:30:10.960 problema desenvolvimento e conclusão e
+00:30:13.200 um termo de autorização da empresa que
+00:30:15.320 permita que você faça esse trabalho lá
+00:30:17.200 dentro da empresa. Então isso que é
+00:30:19.480 basicamente o PEX. Então, só resumindo
+00:30:21.360 para vocês, o PEX um é teórico. Vocês
+00:30:23.559 vão ler um artigo, escolher um artigo,
+00:30:26.600 fazer um resumo desse artigo que vai ser
+00:30:28.480 um texto, responder as perguntas que
+00:30:30.559 estão lá dentro do resumo e vão enviar
+00:30:32.840 na plataforma respondendo todos os
+00:30:34.559 campos, que é o campo de conclusão,
+00:30:36.760 campo de desenvolvimento. Aí você pode
+00:30:38.440 anexar lá junto com o seu relatório. E
+00:30:41.360 para quem tá no segundo semestre em
+00:30:42.960 diante, o seu PEX, ele é um PEX prático.
+00:30:45.159 Então você precisa ir numa empresa,
+00:30:46.919 identificar um problema relacionado à
+00:30:49.000 sua área de atuação, de desenvolver uma
+00:30:51.000 proposta e enunciar quais foram as
+00:30:53.120 conclusões e o que que foi que você
+00:30:55.120 conseguiu concluir com o seu projeto.
+00:30:57.200 Anexar duas fotos mais o termo da
+00:30:59.279 empresa que permita você eh desenvolver
+00:31:01.760 o projeto lá.
+00:31:05.240 Então, eu dei uma resumida aqui, ó. Eh,
+00:31:08.200 já adiantei, esse aqui é referente ao
+00:31:09.919 PEX eh um. Então, para quem tá iniciando
+00:31:12.559 o PEX agora, então você vai ser acessar
+00:31:14.720 esse link do projeto do ANA, escolher um
+00:31:17.279 artigo da sua área de conhecimento. Se
+00:31:18.919 não for específico da área, pode ser
+00:31:20.840 algo correlacionado. Eh, após a leitura,
+00:31:23.399 você vai preencher as caixas lá, fazer
+00:31:25.360 um resumo do projeto e colocar e a
+00:31:28.799 imagem de qual artigo que você quer, tá
+00:31:30.960 bom? Então, isso é referente ao PEX 1.
+00:31:32.880 Os demais é o projeto prático. E qual
+00:31:35.519 que é o benefício que a gente tem com
+00:31:36.799 PEX? Colocar o nosso conhecimento em
+00:31:38.720 prática. Igual eu expliquei para vocês,
+00:31:40.399 a gente tem um conhecimento, a gente vai
+00:31:42.120 desenvolver habilidade, valores,
+00:31:43.679 experiências, que a gente chama de
+00:31:44.960 chave, né? Para isso, a gente vai poder
+00:31:47.080 ampliar a nossa visão de muto. Então, eu
+00:31:48.639 posso eh fazer cada semestre um PEX numa
+00:31:51.039 área determinada, ah, eu tô fazendo
+00:31:52.840 psicologia, tô dando exemplo, tá? Ah,
+00:31:54.960 tem várias áreas de atuação dentro da
+00:31:56.399 psicologia. Eu posso fazer cada hora
+00:31:58.080 numa área correlacionada. Ah, eu tô
+00:31:59.519 fazendo gestão financeira. Ah, você pode
+00:32:01.120 fazer primeiro de hospital, depois você
+00:32:02.559 pode ir de colégio, ah, de coisa assim,
+00:32:04.799 eh, sem fins lucrativos e assim vai.
+00:32:07.559 isso é o network que vocês podem estar
+00:32:09.799 adquirindo. Por isso que é o ideal você
+00:32:11.519 nem sempre fazer dentro da mesma
+00:32:14.679 empresa, porque você vai poder fazer
+00:32:16.480 network com outras pessoas, você vai
+00:32:18.240 poder adquirir conhecimento com outros
+00:32:20.559 funcionários, né? Você vai poder
+00:32:22.360 construir a sua rede profissional. Fora
+00:32:24.559 isso, você pode explorar novos
+00:32:25.919 interesses, sair da sua zona de
+00:32:27.279 conforto, não ficar somente na sua zona
+00:32:28.960 de conforto e com isso você acaba
+00:32:31.039 sentindo uma satisfação pessoal.
+00:32:34.080 Então ele é voltado pro pro
+00:32:36.080 desenvolvimento comunitário, então ele
+00:32:37.519 tá sempre diretamente ligado a um
+00:32:39.399 análise, né? Então é igual o pessoal
+00:32:41.919 pergunta, né? Nossa, eh o meu PEX lá tem
+00:32:44.600 vários objetivos que é conforme os
+00:32:46.240 objetivos eh da ONS, né? Então você pode
+00:32:50.799 escolher vários objetivos, você não
+00:32:52.679 precisa se faltar em um educação,
+00:32:54.720 sustentabilidade e assim sucetivamente.
+00:32:59.760 E é isso, pessoal. Isso aqui é o o
+00:33:01.360 resumão para vocês do que que é o PEX,
+00:33:03.600 como que funciona, tá? Eu vou abrir
+00:33:06.880 agora para vocês falarem, se vocês
+00:33:08.639 tiverem alguma dúvida, algo específico
+00:33:11.200 para vocês trazerem aí pra gente essas
+00:33:13.559 dúvidas que a gente consegue tirar, tá?
+00:33:30.919 Eh, boa noite. Tudo bem? Meu nome é
+00:33:32.519 Gustavo. Eh, eu vim de transferência aí.
+00:33:35.600 Eu tenho muitas duas, até coloquei no
+00:33:37.559 chat. Eh, eu fui reprovado porque não
+00:33:40.200 sabia o que fazer. Eu até então tava até
+00:33:42.760 naquele work love.
+00:33:45.080 Aí eu eu fiz relacionado a a pessoal
+00:33:48.600 porque ficou em cima da hora, não sabia
+00:33:49.880 o que fazer e ficou por isso mesmo que
+00:33:51.279 eu tinha tirado uma cisticação bancária,
+00:33:54.600 aí acho que não foi enxuto ou nem nada a
+00:33:58.000 ver assim. Por exemplo, eu também tenho
+00:34:00.240 uma dúvida, por exemplo, eu trabalho na
+00:34:01.760 Localiza, a Localiza, a empresa tem
+00:34:04.799 muito funcionário.
+00:34:06.919 Eh, aí, por exemplo, vou igual na minha
+00:34:10.000 área lá, eu vejo que tem muita
+00:34:11.280 oportunidade em Sim, que é na minha área
+00:34:12.599 de contabilidade, eu consigo entrar na
+00:34:16.040 área comercial, que é o que eu trabalho
+00:34:18.960 em si. Eu poderia apresentar várias
+00:34:21.599 coisas, só que tem só um porém eh
+00:34:23.879 relacionado a CNPJ e permissão. Se eu
+00:34:27.119 conseguisse a permissão do meu da pessoa
+00:34:31.079 que tá acima, seria válido paraa
+00:34:33.079 universidade
+00:34:34.800 ou precisaria de alguém que, sei lá,
+00:34:36.359 gerente?
+00:34:38.399 Eh,
+00:34:38.800 >> então pode ser o seu gestor assinando,
+00:34:40.599 desde que ele tenha
+00:34:42.719 aí ele obviamente ele deve pedir
+00:34:44.599 autorização pra empresa, porque não são
+00:34:46.239 todas as empresas que permitem, né,
+00:34:48.239 justamente por uma questão de divulgação
+00:34:50.000 do nome da empresa, divulgação ali do
+00:34:52.719 trabalho em si, né, porque fica
+00:34:54.079 registrado no seu histórico o seu nome,
+00:34:55.719 o nome da empresa, né? Mas aí tendo essa
+00:34:57.720 autorização, ele autorizando juntamente
+00:34:59.640 com, acredito, o RH da empresa, time de
+00:35:01.839 comunicação, eh, você pode, não tem
+00:35:04.400 problema nenhum, tá?
+00:35:06.480 E é um por semestre esses projetos de
+00:35:08.599 extensão.
+00:35:09.680 >> Ele é um por semestre. Isso é a
+00:35:11.880 descomplica. Ela divide, por exemplo, 1
+00:35:13.720 A, um B, né? Por exemplo, tá no primeiro
+00:35:15.240 semestre, tem um módulo 1 A, 1 B. É 1 A
+00:35:18.040 e 1 B é um projeto de extensão, 2A e 2B
+00:35:21.119 projeto de extensão e assim vai. Então é
+00:35:22.880 um por semestre. A cada se meses
+00:35:25.040 geralmente você faz um projeto de
+00:35:26.480 extensão.
+00:35:28.400 >> Deixa eu ver. É dúvida boa, né? Deu para
+00:35:32.280 clarear, mas eu cheguei aqui de
+00:35:34.560 paraquedas.
+00:35:36.359 Só falando também, você pode fazer o seu
+00:35:38.920 projeto dentro da empresa que você
+00:35:40.599 trabalha, porém você tem que fazer um
+00:35:42.800 outro setor, não no setor que você
+00:35:44.560 trabalha, tá? Você procura, por exemplo,
+00:35:47.040 se você trabalha com contabilidade,
+00:35:49.119 procura um setor de RH ou um setor de
+00:35:51.760 logística, não aquele setor exatamente
+00:35:54.079 que você trabalha, tá bom?
+00:35:56.319 >> Uhum.
+00:35:57.920 Aí na hora que você for lá, você o
+00:36:01.160 gestor assinar, se ele não tiver o
+00:36:03.359 número, o o CNPJ, ele pode estar
+00:36:06.599 colocando o número do CPF ou do o do RG
+00:36:10.599 dele lá na hora onde que tá escrito lá o
+00:36:13.160 CNPJ, tá? E também não esqueça de tirar
+00:36:15.760 foto lá dentro da empresa junto com o
+00:36:17.599 gestor para poder tá enviando isso junto
+00:36:20.480 e além disso fazer um relatório à parte,
+00:36:22.839 tá?
+00:36:24.400 >> Sim.
+00:36:28.040 Enfim, obrigado, viu, gente?
+00:36:31.280 >> Nada.
+00:36:39.520 >> Eh, André perguntou aqui, eu estou no
+00:36:41.400 primeiro semestre, ainda não consigo
+00:36:42.680 entender como faz o projeto nesse
+00:36:43.960 momento, só a parte teórica na da
+00:36:45.680 plataforma pede foto. Pode explicar?
+00:36:47.520 Como você é o seu primeiro semestre, não
+00:36:49.280 foca nada de foto, não precisa da foto.
+00:36:51.640 A foto é justamente o artigo que você
+00:36:53.920 vai escolhar, escolher aes lá, que é o
+00:36:56.680 artigo, você vai ter vários artigos para
+00:36:58.520 você escolher. Você vai ter que fazer um
+00:37:00.640 resumo e responder as perguntas e os
+00:37:02.319 campos referente à aquele artigo, tá?
+00:37:04.800 Então, a foto, que no caso seria, seria
+00:37:06.880 a foto ali um print do artigo que você
+00:37:08.960 tá tirando ou se você conseguiu anexar o
+00:37:11.640 próprio artigo ali na plataforma.
+00:37:15.280 A plataforma, Marcos, depende, tem duas
+00:37:17.640 hoje. Se você começou agora, você nunca
+00:37:20.760 fez packs ainda e você começou agora
+00:37:22.720 nesse semestre, aí chama Emelec. A
+00:37:24.680 plataforma, ela é dentro da
+00:37:28.359 da do da descomplica mesmo. Você não
+00:37:30.760 precisa sair, tipo, um link a para fora,
+00:37:33.640 não, tá? Já outra é a work.
+00:37:39.520 >> Eh, eu eu descobri isso esses dias. Ele
+00:37:41.560 fica no próprio local onde tem as
+00:37:45.200 disciplinas.
+00:37:46.760 Aí, deixa eu tô até abrindo aqui o meu
+00:37:48.200 aqui rapidinho, gente. Onde tem lá
+00:37:50.359 disciplinas, vai ter lá módulo e vai ter
+00:37:53.280 lá módulos. Na direita vai aparecer
+00:37:55.440 projeto de extensão. Aí tem lá e tem as
+00:37:59.040 as mesmas aulas, as mesmas dúvidas
+00:38:00.839 também que ajuda muito.
+00:38:08.079 Sim, o nome é esse aí que você colocou,
+00:38:10.319 tá?
+00:38:11.720 É só o nome que eles utilizam, mas ele
+00:38:14.560 fica ali, igual o colega falou nessa
+00:38:16.160 aba.
+00:38:19.760 Sim, aparece ele do lado da aba
+00:38:21.359 disciplina, tá?
+00:38:26.240 Eh, a Renata perguntou onde que você
+00:38:27.640 pode fazer o trabalho, Renata, você
+00:38:29.079 pode, se você estiver do segundo
+00:38:30.480 semestre em diante, você pode fazer o
+00:38:32.520 trabalho em qualquer instituição que tem
+00:38:34.760 CNPJ, MEI, desde que seja dentro da sua
+00:38:37.640 área de atuação, tá? A gente só não
+00:38:39.680 recomenda que seja, por exemplo, se você
+00:38:41.240 tiver uma empresa, alguma coisa você
+00:38:43.680 fazer dentro da sua empresa, mas ah, eu
+00:38:46.440 trabalho numa uma outra empresa, é na
+00:38:49.040 igual o colega falou, localiza, trabalha
+00:38:51.000 na azul, você trabalha na Gol, você pode
+00:38:53.520 fazer aí na empresa que você atua, não
+00:38:55.640 tem problema. Desde que você peça
+00:38:57.240 autorização e aí você precisa de
+00:38:59.040 imprimir a carta que tá na plataforma e
+00:39:01.160 pedir pra empresa autorizar com o nome
+00:39:02.880 do seu projeto, o nome do seu gestor, se
+00:39:04.880 a empresa tiver carimbo, carimbá, tá
+00:39:07.000 bom?
+00:39:24.319 Eh, a MC falou: &quot;No meu caso, estou faz
+00:39:26.839 estou fazendo eh com a igreja local
+00:39:29.200 fazer algumas aulas sobre temas que
+00:39:30.520 estudamos esse semestre em teologia e
+00:39:32.400 que abrange problemas da igreja. Já
+00:39:33.920 serve como PEX?&quot; Sim, já serve. Só
+00:39:36.359 lembrando que se for palestra aí você
+00:39:39.839 precisa, tipo, é a partir do eh Palom, é
+00:39:42.440 do quarto ou do quinto? Eu já não
+00:39:44.079 lembro. Eu acho que é do quarto.
+00:39:47.680 Você lembra?
+00:39:48.160 >> Do quarto. A partir do quarto.
+00:39:49.880 >> É do quarto, né?
+00:39:51.280 >> Isso. Se for palestra é a partir do
+00:39:52.920 quarto período do quarto, do quarto, tá?
+00:39:56.400 Que você pode fazer. Mas no seu caso,
+00:39:58.079 você vai desenvolver a aula. Vou te dar
+00:39:59.800 uma dica. Eu já fiz sobre aula. O meu
+00:40:01.960 primeiro foi sobre aula. Eh, eu peguei e
+00:40:05.359 montei, não foi só dar a aula, mas eu
+00:40:07.480 montei todo o cronograma de aula, né?
+00:40:09.960 Então assim, eh, fiz todo o cronograma,
+00:40:12.520 toda a didática, tipo assim, no minuto
+00:40:15.240 três eu vou falar isso, no minuto quatro
+00:40:17.040 isso. Então, você pode montar ali um
+00:40:18.680 cronograma da aula que você vai falar do
+00:40:21.200 tema e escrever sobre ele e aplicar ou
+00:40:23.880 pedir para alguém aplicar, não tem
+00:40:25.839 problema nenhum. Isso, isso já é válido,
+00:40:27.800 tá?
+00:40:36.319 Eh, a Fernanda perguntou: &quot;É possível
+00:40:37.800 refazer ou entregar?&quot; Eh, isso então,
+00:40:41.160 pela work lobby, você não consegue
+00:40:44.680 mudar, vamos dizer assim, a work lob
+00:40:47.400 você enviou, você não consegue refazer o
+00:40:49.440 seu trabalho ali. Uma vez que você
+00:40:51.119 enviou, você não consegue depois editar.
+00:40:53.240 Então, você tem que tomar muito cuidado.
+00:40:55.280 Falaram pra gente que nessa nova
+00:40:56.920 plataforma seria possível. E aí, até
+00:40:59.240 mesmo, por exemplo, ah, eu mandei o o
+00:41:02.040 professor foi lá e recusou. Aí você pode
+00:41:03.720 fazer a correção e mandar pro professor
+00:41:05.680 de volta com a correção. Eu só não vou
+00:41:07.760 te confirmar isso agora, porque como é
+00:41:09.200 algo novo, a gente vai validar isso com
+00:41:11.520 a nossa eh coordenadora e assim que ela
+00:41:13.800 passar ao certo pra gente, a gente passa
+00:41:16.240 para vocês e te dá 100% de certeza, tá?
+00:41:19.240 Mas a princípio pela Work Love, você
+00:41:21.079 mandou uma vez, você não consegue eh
+00:41:23.960 tipo corrigir e mandar. Aí você tá
+00:41:26.160 reprovada. Aí no próximo semestre você
+00:41:28.160 tem que puxar de novo, tá?
+00:41:33.000 Eh, você falou que trabalha numa
+00:41:34.280 situação de rua, como você deve eh com
+00:41:35.920 pessoas com situação de rua, né? Eh, aí
+00:41:38.240 você precisa de uma ONG por de trás. Se
+00:41:40.200 for somente um trabalho, você indo lá e
+00:41:43.240 não é válido. Precisa de um CPJ, um MEI,
+00:41:46.319 uma ONG por de trás. E aí a pessoa que
+00:41:49.119 responsável por essa ONG vai assinar
+00:41:50.599 para você realizar o seu projeto de
+00:41:52.440 extensão lá, não tem problema nenhum,
+00:41:54.160 tá?
+00:42:04.200 Sim, o quem para quem tá no primeiro,
+00:42:06.160 esse é o primeiro pex que você tá
+00:42:07.880 fazendo, você vai escolher um artigo,
+00:42:10.200 vai fazer um resumo desse artigo, eh,
+00:42:13.280 bem detalhado, né, explicando sobre a
+00:42:15.560 área de atuação, porque que você
+00:42:16.800 escolheu aquele artigo, responder as
+00:42:19.240 perguntas que estão na plataforma e
+00:42:21.599 anexar o artigo ou um print do seu
+00:42:24.000 artigo dentro da plataforma. É, é
+00:42:26.680 básico, ele é um teórico. A partir dos
+00:42:28.880 próximos, aí ele já vira prático, tá?
+00:42:35.079 É, a palestra é a partir do quatro, a
+00:42:38.040 orientação que a gente tem. Pode ser que
+00:42:40.480 o o passou ali despercebido pelo
+00:42:42.400 professor e ele aprovou, mas palestra a
+00:42:45.480 gente tem a orientação de que a
+00:42:46.839 professora passou pra gente que é só a
+00:42:48.480 partir do quarto pack. Então se você
+00:42:50.200 fizer antes, pode correr o risco de ser
+00:42:51.880 reprovado porque está dentro do
+00:42:53.559 critério, dentro do manual que tá dentro
+00:42:55.359 da plataforma, tá?
+00:42:58.839 Sim. A princípio a modalidade reinv é só
+00:43:01.400 pela plataforma nova. Então isso ele tá
+00:43:03.400 em desenvolvimento e eh é algo que a
+00:43:05.880 professora deu um spoiler pra gente, a
+00:43:07.680 gente tá comentando, mas ainda não tá
+00:43:09.480 nada certo. Assim que que ela der bater
+00:43:12.720 o martelo, a gente traz para vocês nas
+00:43:14.400 próximas monitorias.
+00:43:21.440 Se você tá no primeiro pack, Eduardo,
+00:43:24.400 você não faz ele prático, tá? Seu
+00:43:26.599 primeiro pex, ele é teórico. Você vai
+00:43:29.359 ter que ler um artigo, achar um artigo,
+00:43:31.480 fazer um resumo desse artigo, eh pegar a
+00:43:35.240 foto desse artigo, responder umas
+00:43:36.800 perguntas, enviar na plataforma. os
+00:43:39.000 packs práticos que aí você poderia fazer
+00:43:41.640 frente a isso, auxílio de pessoas em
+00:43:43.599 situação de vulnerabilidade. Aí você
+00:43:45.440 pode fazer eh a partir do segundo, aí
+00:43:48.680 você pode sim usar o CNPJ da igreja e
+00:43:50.800 pedir o pastor titular para fazer
+00:43:55.480 para para passar isso para vocês, tá?
+00:43:59.079 Sim. Você precisa colocar a carta de a
+00:44:01.480 carta de apresentação que você leva pra
+00:44:03.359 empresa, você não precisa de anexar, mas
+00:44:05.760 a carta que a empresa autoriza você a
+00:44:08.599 fazer o seu projeto de extensão, você
+00:44:10.079 precisa anexar na plataforma.
+00:44:17.079 Com o professor é só através de abertura
+00:44:19.559 de chamado pela plataforma da
+00:44:20.920 descomplica. Com nós monitores, pode ser
+00:44:23.359 tanto pelo team, eh pelo Teams, pelo eh
+00:44:26.720 Telegram, tá? ou referente ao formulário
+00:44:29.559 que a gente tem de tirúvidas ou aqui nas
+00:44:31.440 monitorias. Toda segunda-feira a gente
+00:44:33.400 faz
+00:44:37.520 eh uma igreja sem que ser palestra. Você
+00:44:40.160 tem um leque aí de variedades que você
+00:44:42.559 pode fazer. Alisson. Eh, por exemplo, eu
+00:44:45.280 já construí um acampamento para uma para
+00:44:47.280 uma igreja, então desenvolvi todo o
+00:44:49.200 cronograma de acampamento, desde as
+00:44:50.960 palavras até as as brincadeiras, sendo
+00:44:54.119 intencional ali, por exemplo,
+00:44:56.000 relacionado a as matérias que eu estudei
+00:44:59.160 naquele semestre. Você pode eh pregar
+00:45:03.520 ali no igreja, não necessariamente uma
+00:45:05.319 palestra e a vez pode contar. Você pode
+00:45:07.839 liderar um grupo de estudo, um grupo
+00:45:10.640 bíblico, eh, referente a algum assunto.
+00:45:13.839 Você pode fazer algum trabalho social
+00:45:15.680 ali, por exemplo, eh, vou dar um exemplo
+00:45:17.640 na minha igreja. A gente tem um projeto
+00:45:19.400 que é chama e mercado. Então, ali as
+00:45:21.760 pessoas em situação de vulnerabilidade,
+00:45:24.640 elas têm vão ali direto na igreja para
+00:45:26.520 fazer compras e a igreja arca com um
+00:45:28.520 determinado valor e dá um valor fiício
+00:45:30.280 para eles poderem ter a realidade de
+00:45:31.760 fazer compras ali no mercado. Então,
+00:45:33.599 isso conta também com um trabalho de
+00:45:35.000 você desenvolver isso dentro da sua
+00:45:36.319 igreja. Não são tipo, tem um, abre
+00:45:38.640 vários leques, né? Você tem várias
+00:45:40.720 oportunidades ali para poder montar
+00:45:42.599 alguma coisa que não necessariamente
+00:45:44.040 seja uma palestra ou uma pregação, tá?
+00:45:59.760 M.
+00:46:22.359 Mais alguma dúvida, pessoal?
+00:46:44.559 Eh, você tá no primeiro e o o PEX você
+00:46:48.119 acessa pela plataforma. Eh,
+00:46:50.520 provavelmente você já deve estar na
+00:46:51.640 plataforma nova, que é dentro da
+00:46:53.839 plataforma da descomplica, fica embaixo
+00:46:55.480 ali próximo da de disciplinas, tá?
+00:46:57.880 projeto de extensão, você clica e tem as
+00:47:00.079 orientações do seu projeto. No primeiro
+00:47:01.880 semestre, você vai fazer um pack teórico
+00:47:03.839 que você vai precisar de ler um ali um
+00:47:06.200 texto, um análise, e desenvolver um
+00:47:08.520 resumo, responder umas perguntas
+00:47:10.240 referentes à aquele texto, printar ali o
+00:47:12.559 texto ou baixar ele, anexar dentro da
+00:47:15.720 plataforma, anexando ali dentro da
+00:47:17.960 plataforma, respondendo as perguntas,
+00:47:20.800 não tá OK? Tá bom? Então, o a data
+00:47:24.599 depende de cada curso, depende de quando
+00:47:26.400 você ingressou. Tá? Então não tem como a
+00:47:28.400 gente falar a data exata vai estar
+00:47:29.880 dentro lá no seu projeto. Exensão a data
+00:47:31.800 que você precisa entregar, porque cada
+00:47:33.839 pessoa tem um seu projeto igual o meu é
+00:47:35.200 para entregar agora em dezembro. Se você
+00:47:37.040 falou que é para entregar em em março,
+00:47:39.880 então pode variar de pessoa para pessoa,
+00:47:42.440 tá? E pode variar o mesmo projeto de
+00:47:44.680 extensão de de indivíduo para indivíduo,
+00:47:46.800 de de curso para curso. Ele pode variar
+00:47:49.280 um pouquinho,
+00:47:53.880 não, ele já tá disponibilizado para quem
+00:47:55.440 ingressou o projeto de extensão, ele já
+00:47:56.960 tá liberado para fazer. Ele fica
+00:47:58.920 disponível durante o semestre inteiro.
+00:48:09.880 Aí quem assinaria, por exemplo, isso
+00:48:11.599 teria que fazer com uma igreja, sempre
+00:48:13.240 tentar um CNPJ associado, tá? Então se
+00:48:16.520 você fizer ali, a Shaiane falou sobre
+00:48:18.480 clube do livro, você precisa ter sempre
+00:48:20.440 alguma organização para assinar. Só você
+00:48:23.119 ali fazer, não, você não consegue. Você
+00:48:25.520 precisa estar fazendo por detrás de uma
+00:48:27.359 organização ou de alguém tem um CNPJ.
+00:48:30.400 Então, por exemplo, se for de uma
+00:48:31.319 igreja, se for do de uma escola de
+00:48:34.160 alguma área, tá?
+00:49:25.240 pessoal, eh, acredito que seja isso. Eh,
+00:49:35.559 sim. Aí tem essa questão também, tá? que
+00:49:37.680 o Marcos falou, sempre pedir direito de
+00:49:39.400 imagem, gente, porque se você tá tirando
+00:49:41.440 foto de qualquer outra pessoa, você
+00:49:42.680 precisa do direito de imagem dela, senão
+00:49:44.240 ela pode processar conforme a
+00:49:46.079 constituição, né? A imagem ela é pessoal
+00:49:48.359 e e aí no caso vocês precisam estar
+00:49:50.799 fazendo essa solicitação, tá? De direito
+00:49:53.160 de imagem. Eh, mas aí, pessoal,
+00:49:55.839 basicamente foi essa a nossa primeira
+00:49:57.760 monitoria. A gente vai dar o tempo aí
+00:49:59.680 agora para vocês essa semana estarem
+00:50:01.319 desenvolvendo o projeto de vocês.
+00:50:03.359 Qualquer dúvida que vocês tiverem dentro
+00:50:05.040 do Telegram, vocês podem mandar lá pra
+00:50:06.839 gente diretamente ou vocês podem anotar
+00:50:09.160 e trazer pra gente na próxima
+00:50:10.440 segunda-feira. A gente vai estar aqui
+00:50:11.640 nesse mesmo canal. A gente, o link fica
+00:50:13.960 disponível dentro da plataforma, a senha
+00:50:16.079 é aluno. Então, se vocês quiserem
+00:50:17.520 compartilhar nos grupos de vocês, pode
+00:50:19.880 fiquem à vontade, tá bom? E qualquer
+00:50:22.200 coisa precisando, contem com a gente, no
+00:50:23.920 que a gente puder ajudar aqui, a gente
+00:50:25.160 tá à disposição durante o semestre para
+00:50:27.079 apoiar vocês no trabalho, dando dicas e
+00:50:29.760 tirando as dúvidas de vocês, tá bom? Um
+00:50:32.119 abraço para vocês, até a próxima, viu,
+00:50:33.839 gente? Ciao. Ciao.

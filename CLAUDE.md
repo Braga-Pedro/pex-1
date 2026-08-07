@@ -16,6 +16,15 @@ O conteúdo é uma mistura de:
 - `CLAUDE.md` — este arquivo.
 - `roadmap-pex1.md` — roteiro passo a passo para concluir o PEX 1: diagnóstico, o que é o PEX 1 na prática, passo a passo de entrega, sugestões de tema, erros a evitar e plano de ação. Contém uma "Data de referência" que deve ser atualizada se o roteiro for revisado.
 
+**Pasta `projeto/` — o projeto técnico escolhido:**
+Documentação do `nextfit-mcp`, servidor MCP para o NextFit que serve simultaneamente como (a) espinha dorsal dos PEX 2 a 6, (b) artefato de portfólio open source e (c) base de um produto potencial. Arquivos numerados na ordem de leitura:
+- `00-conceito.md` — problema, tese, por que agora, custo de inferência zero
+- `01-arquitetura.md` — stack (PHP + SDK oficial MCP), escopo read-only das ferramentas, LGPD, decisões registradas
+- `02-evals.md` — o diferencial técnico: as quatro camadas de teste, dataset, métricas, execução com Ollama local
+- `03-roadmap-execucao.md` — 6 fases (~13 semanas a 2h/dia), com riscos
+- `04-roadmap-pex.md` — mapeamento PEX 1 a 6, exigências institucionais, o que evita reprovação
+- `05-linkedin.md` — pauta de conteúdo por fase
+
 **Pasta `pex-context/` — índice de recursos:**
 - `pex-context.md` — índice enxuto apontando para as fontes primárias (PDFs, vídeo de monitoria e sua transcrição) e o motivo de cada uma existir.
 - `Transcricao monitoria youtube.txt` — transcrição bruta de uma aula de monitoria sobre o PEX, usada como fonte para o roadmap.
@@ -28,6 +37,7 @@ O conteúdo é uma mistura de:
 ## Como trabalhar neste repositório
 
 - O usuário está no 5º semestre do curso, sem nenhum PEX entregue ainda (situação de atraso/DP) — os PEX são cumulativos, então velocidade de regularização importa.
-- Ao atualizar `roadmap-pex1.md` ou `pex-context/pex-context.md`, mantenha o estilo existente: seções curtas em pt-BR, checklists com `- [ ]`, tabelas comparativas quando útil, e uma linha "Data de referência" atualizada.
+- O usuário é dev pleno (PHP, Laravel, Filament, Vue, JS, Docker, PostgreSQL, Python) com repertório em embeddings/RAG. O projeto escolhido precisa atender três objetivos ao mesmo tempo: cumprir os PEX, render portfólio no LinkedIn e ter chance de virar produto. Disponibilidade real: 2h/dia.
+- Ao atualizar `roadmap-pex1.md`, os arquivos de `projeto/` ou `pex-context/pex-context.md`, mantenha o estilo existente: seções curtas em pt-BR, checklists com `- [ ]`, tabelas comparativas quando útil, e uma linha "Data de referência" atualizada.
 - Ao extrair informação dos PDFs para as notas, confirme sempre contra o roteiro atual na plataforma do curso (Emelec) — os PDFs institucionais podem estar desatualizados em relação ao formato vigente (o próprio roadmap já observa divergência entre o modelo descrito no manual de 2024 e o relatado por monitores em períodos mais recentes).
 - Não há necessidade de comandos de build/lint/test — qualquer tarefa aqui é edição de texto/markdown ou pesquisa de conteúdo nos PDFs anexados.

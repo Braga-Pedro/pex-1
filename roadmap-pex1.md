@@ -3,7 +3,7 @@
 **Situação atual:** 5º semestre, 0 de 6 PEX entregues
 **Data de referência:** 07/08/2026
 
-> **O projeto que dará corpo aos PEX 2 a 6 já está definido** — `nextfit-mcp`, um servidor MCP para sistemas de gestão. Toda a documentação está em [`projeto/`](projeto/), começando por [`projeto/00-conceito.md`](projeto/00-conceito.md). O mapeamento semestre a semestre está em [`projeto/04-roadmap-pex.md`](projeto/04-roadmap-pex.md), que substitui e detalha as seções 4 e 6 deste documento.
+> **O projeto que dará corpo aos PEX 2 a 6 vive em branch própria.** Veja [`PROJETOS.md`](PROJETOS.md) para o índice das linhas de projeto — a ativa é `projeto/support-mcp` (MCP server de suporte técnico interno). O mapeamento semestre a semestre está no `projeto/05-roadmap-pex.md` dessa branch, que substitui e detalha as seções 4 e 6 deste documento.
 >
 > Este arquivo segue válido como panorama geral das regras institucionais do PEX.
 

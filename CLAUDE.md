@@ -30,9 +30,9 @@ Consequências práticas:
 ## Estrutura dos arquivos
 
 **Raiz do repositório (`main`):**
+- `README.md` — porta de entrada e panorama das regras institucionais do PEX: diagnóstico, formato do PEX 1 (teórico ou prático conforme o período de ingresso), roadmap de entrega, erros a evitar. Contém uma "Data de referência" que deve ser atualizada se o roteiro for revisado.
 - `CLAUDE.md` — este arquivo.
 - `PROJETOS.md` — índice das linhas de projeto, com o motivo de cada uma existir e o que têm em comum.
-- `roadmap-pex1.md` — panorama das regras institucionais do PEX: diagnóstico, o que é o PEX 1 na prática, passo a passo de entrega, erros a evitar. Contém uma "Data de referência" que deve ser atualizada se o roteiro for revisado.
 
 **Pasta `projeto/` (só nas branches de projeto):**
 Documentação numerada na ordem de leitura, começando por `00-conceito.md`. O conjunto de arquivos varia por linha — veja o `PROJETOS.md` da `main` ou o `00-conceito.md` da própria branch.
@@ -50,6 +50,6 @@ Documentação numerada na ordem de leitura, começando por `00-conceito.md`. O 
 
 - O usuário está no 5º semestre do curso, sem nenhum PEX entregue ainda (situação de atraso/DP) — os PEX são cumulativos, então velocidade de regularização importa.
 - O usuário é dev pleno (PHP, Laravel, Filament, Vue, JS, Docker, PostgreSQL, Python) com repertório em embeddings/RAG. O projeto escolhido precisa atender três objetivos ao mesmo tempo: cumprir os PEX, render portfólio no LinkedIn e ter chance de virar produto. Disponibilidade real: 2h/dia.
-- Ao atualizar `roadmap-pex1.md`, `PROJETOS.md`, os arquivos de `projeto/` ou `pex-context/pex-context.md`, mantenha o estilo existente: seções curtas em pt-BR, checklists com `- [ ]`, tabelas comparativas quando útil, e uma linha "Data de referência" atualizada.
-- Ao extrair informação dos PDFs para as notas, confirme sempre contra o roteiro atual na plataforma do curso (Emelec) — os PDFs institucionais podem estar desatualizados em relação ao formato vigente (o próprio roadmap já observa divergência entre o modelo descrito no manual de 2024 e o relatado por monitores em períodos mais recentes).
+- Ao atualizar `README.md`, `PROJETOS.md`, os arquivos de `projeto/` ou `pex-context/pex-context.md`, mantenha o estilo existente: seções curtas em pt-BR, checklists com `- [ ]`, tabelas comparativas quando útil, e uma linha "Data de referência" atualizada.
+- Ao extrair informação dos PDFs para as notas, confirme sempre contra o roteiro atual na Plataforma de Aulas (desde 2026.1 é a única via de entrega, para veteranos e calouros) — os PDFs institucionais podem estar desatualizados em relação ao formato vigente. O `README.md` já registra duas divergências confirmadas: o PEX 1 teórico vale só para calouros a partir de 25.3, e a plataforma Work Love saiu de cena.
 - Não há necessidade de comandos de build/lint/test — qualquer tarefa aqui é edição de texto/markdown ou pesquisa de conteúdo nos PDFs anexados.

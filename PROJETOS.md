@@ -2,7 +2,7 @@
 
 Este repositório organiza a conclusão do **PEX (Projeto de Extensão)** do curso de ADS. A `main` guarda o contexto institucional comum; **cada linha de projeto vive na própria branch**.
 
-**Data de referência:** 07/08/2026
+**Data de referência:** 20/08/2026
 
 ---
 
@@ -57,9 +57,9 @@ Não foi uma troca de projeto, foi uma troca de **caso de uso**. O núcleo perma
 
 | Arquivo | Conteúdo |
 |---|---|
+| `README.md` | Panorama das regras institucionais do PEX e roadmap de entrega |
 | `PROJETOS.md` | Este índice |
 | `CLAUDE.md` | Instruções para o Claude Code neste repositório |
-| `roadmap-pex1.md` | Panorama das regras institucionais do PEX |
 | `pex-context/` | PDFs oficiais, transcrição de monitoria e índice das fontes |
 
 Nada específico de projeto — isso vive nas branches.

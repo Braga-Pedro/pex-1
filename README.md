@@ -1,144 +1,221 @@
-# PEX — Projeto de Extensão (ADS)
+# Blindagem — assistente de resposta à exposição de dados pessoais
 
-Espaço de trabalho para organizar a conclusão dos **Projetos de Extensão** do curso de Tecnologia em Análise e Desenvolvimento de Sistemas — Descomplica + Centro Universitário União das Américas.
-
-**Não é um projeto de software.** É contexto institucional + notas de planejamento. O código, quando existir, vive nas branches de projeto.
-
-**Situação atual:** 5º semestre, 0 de 6 PEX entregues
+**Linha de projeto do PEX** · Curso de Tecnologia em Análise e Desenvolvimento de Sistemas
+**Stack-alvo:** Java 21 + Spring Boot 3 + Spring AI + PostgreSQL/pgvector
 **Data de referência:** 20/08/2026
 
-> ⚠️ As regras abaixo foram conferidas contra as páginas oficiais da Descomplica (links no fim). Onde houver divergência com os PDFs em [`pex-context/`](pex-context/), **o roteiro que aparece no seu perfil na plataforma vence** — ele é individualizado por aluno, curso e período.
+> Esta branch contém uma linha de projeto. O contexto institucional do PEX (regras, prazos, formato de entrega) está na `main`. Veja [`PROJETOS.md`](https://github.com/Braga-Pedro/pex-1/blob/main/PROJETOS.md) para o índice das linhas.
 
 ---
 
-## Modelo de branches
+## 1. Em uma frase
 
-A `main` **não contém projeto técnico**. Guarda só o contexto institucional comum a todas as linhas. Cada linha de projeto vive na própria branch, com sua própria pasta `projeto/`.
+Um assistente que, a partir do **perfil de exposição** de uma pessoa — sem nunca pedir ou armazenar o CPF dela — gera um **plano de ação priorizado, verificável e com prazo**, fundamentado em fontes oficiais citadas, e a acompanha até que cada passo esteja concluído.
 
-| Branch | Conteúdo | Estado |
+Não é mais um verificador de vazamento. A razão está na seção 4, e é a decisão mais importante deste documento.
+
+---
+
+## 2. O problema, com números
+
+| Dado | Fonte |
+|---|---|
+| **53,9 milhões** de beneficiários do Auxílio Emergencial tiveram nome completo, CPF, NIS, município e valor publicados no Portal da Transparência em 2020 | CGU / Portal da Transparência |
+| **~7 milhões** de tentativas de fraude no 1º semestre de 2025 — uma a cada **2,3 segundos** | Panorama de golpes digitais |
+| **24 milhões** de brasileiros vitimados por golpes de Pix e boleto entre jul/2024 e jun/2025, com **R$ 29 bilhões** em perdas | Levantamento setorial |
+| **R$ 6 bilhões** desviados em descontos indevidos em aposentadorias e pensões entre 2019 e 2024 | Apuração sobre consignado |
+| Maior alta percentual de tentativas de fraude: pessoas com **mais de 60 anos** (+11,9%); **72 mil** denúncias de golpe financeiro contra idosos no Disque 100 em 2024 | Serasa Experian / Disque 100 |
+
+O elo entre as linhas: golpes de consignado e abertura de conta usam **dados obtidos de vazamentos e de fontes públicas** para passar pela verificação de identidade. A exposição não é o dano — é o insumo do dano.
+
+---
+
+## 3. O que foi confirmado da ideia original, e o que precisou ser corrigido
+
+A intuição de partida era: *"dados de brasileiros estão públicos, isso alimenta golpes, e falta uma ferramenta que diga o que fazer."* Pesquisando, duas coisas se confirmaram e uma precisou de ajuste.
+
+**Confirmado — a exposição de 2020 foi real e massiva.** O Portal da Transparência publicou, para 53,9 milhões de pessoas, a combinação nome completo + CPF + NIS + município + valor recebido.
+
+**Confirmado — falta a ferramenta.** Não existe serviço oficial do governo que informe se um CPF apareceu em vazamento. O Have I Been Pwned cobre e-mail e senha, não CPF. A Serasa monitora *consultas* ao CPF, não exposição. O Registrato do Banco Central mostra vínculos financeiros, não exposição.
+
+**Corrigido — hoje o Portal da Transparência mascara o CPF.** A publicação atual de programas sociais traz nome, valor, estado e município, com o CPF parcialmente oculto, em atendimento à LGPD. Ou seja: a premissa "hoje qualquer um baixa a lista com CPF" **não vale mais para as publicações atuais**.
+
+Isso não enfraquece o projeto — desloca o alvo. O que foi baixado em 2020 já circula, e mascarar depois não desfaz exposição pretérita. E nome completo somado a município e programa social continua sendo material suficiente para engenharia social convincente. O projeto passa a tratar **exposição acumulada e risco presente**, não "vazou ou não vazou".
+
+---
+
+## 4. O que este projeto **não** é — e por que
+
+> **Não construir um banco de dados de CPFs vazados, sob nenhuma arquitetura.**
+
+Parece o caminho óbvio: obter as bases que circulam, indexar, permitir consulta por CPF. É o caminho errado, por cinco razões independentes — bastaria uma:
+
+1. **LGPD.** Tratar dados pessoais de milhões de terceiros exige base legal. Não há base legal disponível para um projeto acadêmico pessoal.
+2. **É a ferramenta do criminoso.** Consulta por CPF que devolve dados é exatamente o produto vendido em mercado clandestino. A intenção de quem construiu não muda o que a ferramenta faz.
+3. **Vira alvo.** Concentrar essa base cria um ativo que atrai ataque, sob responsabilidade de um estudante sozinho.
+4. **Mata o portfólio.** O repositório não poderia ser público, nem demonstrado em entrevista — o que anula o objetivo do projeto.
+5. **Obtenção ilícita.** Baixar base vazada para alimentar o sistema é aquisição de dado de origem criminosa.
+
+**Sobre o modelo do Have I Been Pwned.** Ele resolve a parte da privacidade da *consulta* com k-anonymity: o cliente envia apenas um prefixo do hash, o servidor devolve todos os hashes com aquele prefixo, e a comparação final acontece no cliente — o servidor nunca sabe o que foi consultado. É uma técnica elegante e vale estudar. Mas ela protege quem consulta, **não resolve a origem da base**. O impedimento continua de pé.
+
+**Conclusão de projeto:** a verificação de vazamento é a parte menos original e mais arriscada da ideia. Descartá-la libera o esforço para onde não há concorrência.
+
+---
+
+## 5. O gap real
+
+As ferramentas existentes entregam, cada uma, **um pedaço** — e nenhuma diz o que fazer com o pedaço.
+
+| Ferramenta | Entrega | Não entrega |
 |---|---|---|
-| `main` | Contexto institucional (este README, `PROJETOS.md`, `pex-context/`) | — |
-| `projeto/support-mcp` | MCP server de suporte técnico interno | **ativa** |
-| `projeto/nextfit-mcp` | MCP server para o NextFit (gestão de academias) | arquivada |
+| Have I Been Pwned | E-mail/senha em vazamentos | Nada sobre CPF, nada sobre o que fazer |
+| Serasa | Alerta de consulta ao CPF | Age depois do fato, não previne |
+| Registrato (BCB) | Contas, chaves Pix e dívidas em seu nome | Não interpreta nem orienta; a maioria nem sabe que existe |
+| Cartilhas CERT.br / ANPD | Orientação correta e oficial | Genérica, extensa, não priorizada, não verificável |
 
-Veja [`PROJETOS.md`](PROJETOS.md) para o índice das linhas e o porquê de cada uma.
+O que falta, e é onde o projeto vive:
 
----
-
-## O que é o PEX
-
-Extensão universitária obrigatória: aplicar o conteúdo do curso em situação real que beneficie uma comunidade. Diferente de atividade complementar — precisa ter relação direta com o curso e, a partir do PEX 2, ser exclusivamente prática.
-
-- Avaliação **binária**: aprovado / não aprovado. Não há nota.
-- Um novo projeto **a cada 6 meses**, até o fim do curso.
-- **Todos** os PEX precisam estar concluídos para colar grau.
+- **Priorização** — a pessoa não sabe o que fazer *primeiro*. Nem tudo tem o mesmo impacto.
+- **Verificabilidade** — nenhuma cartilha diz "faça X, e você saberá que funcionou quando vir Y".
+- **Personalização** — o conselho para um aposentado do INSS não é o mesmo para um universitário.
+- **Acompanhamento** — orientação lida e não executada tem valor zero.
 
 ---
 
-## ⚠️ O ponto crítico: o "PEX 1 teórico" pode não ser o *seu* PEX 1
+## 6. Os cinco componentes
 
-A regra oficial condiciona o formato do PEX 1 ao **período de ingresso**:
+### 6.1 Entrevista guiada — sem CPF, sem nome
 
-| Público | Formato do PEX 1 |
+O sistema **nunca pede dado identificável**. Ele pergunta sobre situação, não sobre identidade:
+
+- Recebeu Auxílio Emergencial ou outro benefício social?
+- É aposentado ou pensionista do INSS?
+- Tem chave Pix cadastrada como o próprio CPF?
+- Já teve celular roubado ou perdido?
+- Usa a mesma senha em mais de um serviço?
+- Tem conta em mais de um banco ou fintech?
+
+Cada resposta ativa um conjunto de vetores de risco. Nenhuma resposta identifica a pessoa.
+
+### 6.2 Motor de risco
+
+Mapeia respostas para **vetores de ataque concretos** documentados no Brasil: consignado fraudulento, SIM swap, abertura de conta em nome de terceiro, golpe do falso funcionário de banco, Pix por engenharia social. Cada vetor carrega impacto estimado e probabilidade conforme o perfil.
+
+### 6.3 Plano de ação priorizado e verificável
+
+O núcleo do produto. Cada passo traz: **o que fazer**, **por onde** (link ou canal oficial), **quanto tempo leva**, **como confirmar que funcionou**. Exemplos reais levantados na pesquisa:
+
+| Ação | Canal oficial | Verificação |
+|---|---|---|
+| Bloquear consignado do INSS | Meu INSS → "Novo Pedido" → "Bloquear/Desbloquear Benefício para Empréstimo Consignado"; ou Central 135 | Efetiva em até 24h úteis; confira o status no próprio Meu INSS. **O INSS recomenda manter sempre bloqueado**, desbloqueando só quando for contratar |
+| Cadastrar senha de portabilidade do chip | Claro `*1052` ou app Minha Claro → Segurança → Senha de Portabilidade; Vivo `*8486` ou Meu Vivo → Senha de Segurança do Chip; TIM e Oi têm equivalente | Tente uma solicitação de segunda via e confirme que a senha é exigida |
+| Levantar contas e chaves Pix em seu nome | Registrato do Banco Central → Minha Vida Financeira, com login gov.br | Compare a lista com o que você reconhece; conta desconhecida vira contestação imediata |
+
+> **Regra de ouro do produto:** o Banco Central afirma que **não autoriza intermediários** — só o próprio cidadão acessa o Registrato. O sistema, portanto, **nunca pede credencial de nada**. Ele orienta a pessoa a acessar por conta própria. Isso é requisito de segurança, não limitação.
+
+### 6.4 Camada de perguntas com RAG sobre corpus oficial
+
+Indexa material **público e oficial**: fascículos "Vazamento de Dados" e "Proteção de Dados" da Cartilha CERT.br (com contribuição da ANPD), orientações do gov.br, resoluções do Banco Central sobre Pix, textos da LGPD, material da Anatel sobre portabilidade.
+
+Responde dúvidas com **citação obrigatória da fonte** e **abstém-se** quando o corpus não sustenta a resposta — encaminhando ao canal oficial competente. Em orientação de segurança, resposta inventada causa dano direto.
+
+### 6.5 Modo assistido
+
+O público mais vitimado — idosos — não usa a ferramenta sozinho. O modo assistido gera um **roteiro de acompanhamento** para quem está ajudando e um **resumo imprimível** para deixar com a pessoa. Este componente é o que transforma a ferramenta em ação de extensão de verdade.
+
+---
+
+## 7. Os três diferenciais
+
+**1. O passo verificável.** Toda orientação de segurança termina em "troque suas senhas" e ninguém sabe se ficou mais seguro. Aqui, cada passo tem um critério objetivo de conclusão. É o que separa conselho de resultado.
+
+**2. Arquitetura sem dado pessoal, por decisão de projeto.** O sistema não armazena CPF, nome, telefone ou e-mail. O progresso do plano fica no navegador do usuário ou sob um identificador anônimo sem vínculo com pessoa. A justificativa não é estética: **armazenar isso transformaria a ferramenta em alvo**, e uma ferramenta de segurança que vira alvo falhou no próprio propósito. Essa é a decisão de arquitetura mais defensável do projeto em uma entrevista técnica.
+
+**3. Reconhecimento de padrão de golpe.** A partir do perfil, o sistema mostra **como uma abordagem fraudulenta contra aquele perfil se pareceria** — quais dados o golpista provavelmente já tem, qual pretexto usaria, qual pedido faria. Objetivo: treinar reconhecimento, do mesmo modo que simulações de phishing são prática padrão em segurança corporativa.
+
+> **Salvaguardas obrigatórias deste componente:** opera exclusivamente sobre o perfil informado pelo próprio usuário; **não gera mensagem pronta para envio a terceiros**; a saída é descritiva ("reconheça este padrão"), nunca operacional; e é sempre acompanhada da ação defensiva correspondente. Estas restrições vão codificadas em teste, não só documentadas.
+
+---
+
+## 8. Arquitetura
+
+| Componente | Papel |
 |---|---|
-| **Calouros a partir de 25.3** (ago/2025) | **Teórico** — roteiro respondido na plataforma, avaliando se você entendeu o que é e como se faz extensão. Sem visita, sem carta, sem termo. |
-| **Veteranos** (ingresso anterior) | **Prático** — trabalho de campo em uma organização/comunidade, com envio de evidências. |
+| **Java 21 + Spring Boot 3** | Base. Records para o modelo de risco, tipagem forte no domínio |
+| **Spring AI** | `ChatClient` e `VectorStore` para a camada de perguntas, com citação de fonte obrigatória |
+| **PostgreSQL + pgvector** | Corpus e embeddings. **Nenhuma tabela de dados pessoais** |
+| **Apache Tika** | Extração de texto dos PDFs oficiais (cartilhas, resoluções, normas) |
+| **Motor de regras** | Perfil → vetores de risco → plano priorizado. Determinístico e testável, **sem LLM no caminho crítico** |
+| **Spring Security** | Sessão anônima; sem cadastro, sem credencial de terceiros |
+| **Testcontainers + JUnit** | Integração com Postgres real em contêiner |
+| **Docker + GitHub Actions** | Pipeline com a suíte de avaliação como etapa que reprova o build |
 
-Ingresso por volta de **2024.1** → grupo **veterano**. Ou seja: existe chance real de o PEX 1 pendente **não ser** o roteiro teórico, e sim já exigir organização, carta de apresentação, termo de autorização e evidências fotográficas.
-
-**Isso muda completamente o esforço e o prazo necessários.** Resolver isso é o item zero — veja a Fase 0 abaixo.
-
----
-
-## Onde entregar
-
-A partir de **2026.1**, veteranos e calouros usam **exclusivamente a Plataforma de Aulas**:
-
-```
-Plataforma de Aulas → Disciplinas → módulo Projeto de Extensão → PEX I
-```
-
-A Work Love (plataforma de carreiras antiga) saiu de cena. Consequência prática: a regra dela de **"1 tentativa única, sem edição depois do envio" não vale mais**. Textos que mencionam Central de Carreiras ou Work Love estão desatualizados.
+**Decisão de arquitetura central:** o plano de ação é gerado por **motor de regras determinístico**, não por LLM. O modelo atua só na camada de perguntas abertas. Motivo: orientação de segurança precisa ser auditável e reproduzível — a mesma entrada tem de gerar a mesma saída, sempre, e alguém precisa poder apontar qual regra produziu cada recomendação. Saber **onde não usar IA** é um sinal de maturidade mais forte do que usá-la em todo lugar.
 
 ---
 
-## Regras de entrega
+## 9. Como isso vira PEX
 
-- **3 tentativas** de envio, todas dentro do prazo. Reprovou na 1ª? Ajusta e reenvia — não espere o semestre seguinte.
-- Correção costuma sair em até **24h**.
-- Entrega em **1 único PDF**, anexado no formulário da disciplina, com declaração de autoria / anti-plágio.
-- Janela de entrega no **2º trimestre do semestre**. O prazo exato é individual — está dentro da própria disciplina.
-- Esgotou as 3 tentativas → disciplina **reprovada** → cursar como **DP**, **sem custo**, solicitada via **Serviços / central de atendimento** (não no ajuste de matrícula).
-- **PEX é acumulativo.** O que não foi entregue não some: a pendência segue até o fim do curso e você pode acabar com dois PEX no mesmo semestre. Estando no 5º semestre com nenhum entregue, regularizar o PEX 1 é o que destrava a fila.
+### ⚠️ O ponto a resolver primeiro
 
----
+O PEX exige uma **organização** — empresa, ONG, escola, igreja, associação. **Ajudar um amigo, individualmente, provavelmente não é aceito** como projeto de extensão, por mais real que seja o benefício. Extensão pressupõe ação junto a uma coletividade.
 
-## Roadmap de execução
+**Confirme isso no roteiro da sua disciplina antes de planejar em cima.**
 
-### Fase 0 — diagnóstico
+### A solução que preserva a vantagem da ideia
 
-**Faça isso antes de escrever qualquer linha.** É o que define todo o resto.
+Mantenha a ferramenta como produto individual e faça a **ação de extensão em formato de oficina**, num grupo que já se reúne:
 
-- [ ] Abrir Plataforma de Aulas → Disciplinas → Projeto de Extensão → **PEX I**
-- [ ] Ler o **roteiro** e classificar o formato:
-  - **Teórico** → resumo de artigo/leitura + respostas às perguntas do roteiro
-  - **Prático** → organização + carta + termo + evidências
-- [ ] Anotar o **prazo exato** de entrega
-- [ ] Verificar se há algum PEX em situação de **DP**. Se sim, abrir chamado em Serviços **imediatamente** — o deferimento tem fila e não está sob seu controle
-- [ ] Na dúvida sobre o formato: assistente virtual da plataforma, **monitoria semanal (segundas)** ou chamado com o tutor. Qualquer um deles vale mais que os PDFs em `pex-context/`
+- Centro de convivência de idosos, grupo de terceira idade de igreja, associação de bairro, escola (turma de EJA ou pais), sindicato
 
-### Fase 1A — se o roteiro for teórico
+Isso conserva exatamente o que motivou a ideia — **um único contato pontual**, sem parceria de dois anos, sem reunião mensal — e ainda ataca o público mais vitimado do país. Uma oficina rende lista de presença, fotos e depoimentos: evidência farta para o relatório.
 
-- [ ] Escolher artigo/texto da área de ADS
-- [ ] **Fichar durante a leitura**: do que trata / por que escolhi / como conecta com o curso
-- [ ] Escrever o resumo **com palavras próprias** — problema abordado, proposta discutida, relevância para ADS
-- [ ] Responder as perguntas do roteiro (tipicamente 3), respondendo **exatamente o que foi perguntado**
-- [ ] Anexar a evidência do artigo (print / PDF / link), conforme o roteiro pedir
-- [ ] Montar o PDF único → enviar → marcar a declaração de autoria
+O amigo continua no plano, como **piloto**: é com ele que você testa a ferramenta e grava o vídeo de uso antes de levar a um grupo.
 
-Onde buscar material: Google Acadêmico, SciELO, Periódicos CAPES, ACM Digital Library, IEEE Xplore — ou capítulos da bibliografia do curso (Pressman, Sommerville, Tanenbaum), se o roteiro aceitar.
+### Cronograma
 
-### Fase 1B — se o roteiro for prático
-
-- [ ] Definir a **organização**: empresa, ONG, escola, igreja, associação de bairro. **Não pode ser CNPJ próprio.** Pode ser onde você trabalha, desde que em **outro setor** e com autorização formal
-- [ ] Baixar e preencher a **Carta de Apresentação** disponível na plataforma
-- [ ] Executar a atividade **registrando evidências durante** — foto no local, prints, artefatos produzidos. Não dá para reconstruir isso depois
-- [ ] Colher o **Termo de Autorização** assinado
-- [ ] Escrever o relatório na estrutura **problema → desenvolvimento → conclusão**
-- [ ] Consolidar tudo em PDF único → enviar
-
-### Fase 2 — depois do PEX 1 aprovado
-
-- [ ] Engatar o **PEX 2**, que é prático com certeza. A burocracia (carta + termo assinado) depende de terceiros, então a organização-alvo precisa ser definida **com antecedência**
-- [ ] A linha de projeto ativa (`projeto/support-mcp`) serve de fio condutor para os PEX 2–6 — levantamento de requisitos, modelagem, prototipação, desenvolvimento, entrega e treinamento, uma fase por semestre
-- [ ] Ressalva: **palestra / treinamento como formato de PEX só é aceito a partir do 4º PEX**
-
----
-
-## Erros que reprovam
-
-- **Tema fora da área de ADS** — ou dentro da área, mas sem justificar a correlação. Causa comum de reprovação.
-- **Copiar trechos do artigo** no resumo. Há declaração anti-plágio no envio.
-- **Deixar para a última hora** e perder a margem das 3 tentativas.
-- **Responder "sobre" o roteiro** em vez de responder o que ele pergunta.
-- No formato prático: **sair da organização sem foto ou sem assinatura** e tentar remontar a evidência depois.
-
----
-
-## Índice do repositório
-
-| Arquivo | Conteúdo |
+| PEX | Entrega |
 |---|---|
-| `README.md` | Este documento — panorama das regras institucionais e roadmap de entrega |
-| [`PROJETOS.md`](PROJETOS.md) | Índice das linhas de projeto (uma por branch) |
-| [`pex-context/`](pex-context/) | PDFs oficiais, transcrição da monitoria e índice das fontes |
-| `CLAUDE.md` | Instruções para o Claude Code neste repositório |
+| **2** | Pesquisa e desenho: mapear vetores de risco reais no Brasil, montar o corpus oficial, desenhar o motor de regras. Sem código de produção — é o semestre de estudar Java e Spring |
+| **3** | MVP: entrevista guiada, motor de regras e plano de ação gerado. Piloto com o amigo, com registro em vídeo |
+| **4** | Camada RAG sobre o corpus oficial, com citação e abstenção. **Oficina no grupo escolhido** — formato liberado a partir deste PEX |
+| **5** | Modo assistido, acompanhamento de progresso e material imprimível. Segunda oficina, com ajustes do que a primeira revelou |
+| **6** | Observabilidade, medição de impacto (quantos planos gerados, quantos passos concluídos) e publicação aberta da ferramenta |
 
 ---
 
-## Fontes
+## 10. Por que esta linha atende aos três objetivos ao mesmo tempo
 
-- [O que é Projeto de Extensão](https://no.descomplica.com.br/knowledge/o-que-%C3%A9-projeto-de-extens%C3%A3o) — Descomplica
-- [Reprovei no Projeto de Extensão, e agora?](https://no.descomplica.com.br/knowledge/reprovei-no-projeto-de-extens%C3%A3o-e-agora) — Descomplica
-- [Tudo sobre aproveitamento de Projetos de Extensão](https://no.descomplica.com.br/knowledge/tudo-sobre-aproveitamento-de-projetos-de-extens%C3%A3o) — Descomplica
-- PDFs institucionais e transcrição de monitoria em [`pex-context/`](pex-context/)
+| Objetivo | Como é atendido |
+|---|---|
+| **Cumprir os PEX** | Benefício social direto e mensurável, com formato de oficina que exige contato pontual |
+| **Portfólio Java** | Spring Boot, Spring AI, pgvector, motor de regras, testes de integração, CI — e um tema de segurança que rende conversa técnica |
+| **Produto potencial** | Não existe equivalente brasileiro; serve a pessoa física, empresa (treinamento de equipe) e terceiro setor |
+
+Some-se o que a ideia original buscava: **dependência mínima de terceiros**. O desenvolvimento não depende de ninguém. Só a ação de extensão precisa de um grupo — uma vez, por algumas horas.
+
+---
+
+## 11. Riscos e como tratá-los
+
+| Risco | Tratamento |
+|---|---|
+| Pessoa física não ser aceita como beneficiária do PEX | Formato de oficina em grupo; confirmar no roteiro antes de investir |
+| Escopo maior do que 2h/dia comporta | Motor de regras e RAG são fases separadas (PEX 3 e 4), nunca simultâneas |
+| Dar orientação errada e causar dano | Corpus exclusivamente oficial, citação obrigatória, abstenção conservadora, motor determinístico e auditável |
+| O componente de reconhecimento de golpe ser mal utilizado | Salvaguardas da seção 7 codificadas em teste automatizado |
+| Fontes oficiais mudarem procedimento | Data de verificação registrada por item do plano; revisão a cada semestre do PEX |
+
+---
+
+## 12. Fontes
+
+- [Portal da Transparência — Auxílio Emergencial](https://portaldatransparencia.gov.br/download-de-dados/auxilio-emergencial)
+- [Portal da Transparência — Benefícios ao cidadão (perguntas frequentes)](https://portaldatransparencia.gov.br/perguntas-frequentes/beneficios-ao-cidadao)
+- [Cartilha de Segurança para Internet — fascículo Vazamento de Dados (CERT.br)](https://cartilha.cert.br/fasciculos/vazamento-de-dados/fasciculo-vazamento-de-dados.pdf)
+- [ANPD e CERT.br lançam publicações sobre proteção de dados](https://www.gov.br/anpd/pt-br/assuntos/noticias/em-comemoracao-ao-dia-internacional-da-protecao-de-dados-cert-br-lanca-novas-publicacoes-sobre-o-tema)
+- [INSS — como bloquear ou desbloquear o benefício para empréstimo consignado](https://www.gov.br/inss/pt-br/noticias/veja-como-bloquear-ou-desbloquear-o-beneficio-para-emprestimo-consignado)
+- [Registrato — Banco Central do Brasil](https://www.bcb.gov.br/cidadaniafinanceira/registrato)
+- [Have I Been Pwned](https://haveibeenpwned.com/)
+
+**Ressalva:** números de fraude vêm de levantamentos setoriais e de imprensa, com metodologias distintas — leia como ordem de grandeza. Procedimentos oficiais (INSS, operadoras, Banco Central) foram verificados em agosto de 2026 e devem ser reconferidos antes de entrarem no plano gerado pela ferramenta.

@@ -8,6 +8,21 @@ Este repositório organiza a conclusão do **PEX (Projeto de Extensão)** do cur
 
 ## Linhas de projeto
 
+### `projeto/blindagem` — nova
+
+**Assistente de resposta à exposição de dados pessoais.** A partir do perfil de exposição de uma pessoa — sem pedir nem armazenar CPF — gera um plano de ação priorizado e **verificável**, com fontes oficiais citadas, e acompanha a execução. Não é verificador de vazamento: essa parte foi descartada por LGPD, risco e inviabilidade de portfólio.
+
+| | |
+|---|---|
+| **Dor** | Ferramentas existentes dizem que você foi exposto, nenhuma diz o que fazer, em que ordem, e como verificar |
+| **Organização do PEX** | Oficina em grupo já constituído (centro de convivência, igreja, associação) — contato pontual, sem parceria longa |
+| **Diferencial** | Passo verificável, arquitetura sem dado pessoal, motor de regras determinístico fora do LLM |
+| **Stack** | Java 21 + Spring Boot + Spring AI + pgvector |
+
+```
+git checkout projeto/blindagem
+```
+
 ### `projeto/support-mcp` — linha ativa
 
 **MCP server de suporte técnico interno.** Consolida documentação estruturada, código do repositório e o histórico do Mattermost numa base pesquisável, exposta ao Claude Code que os próprios usuários já usam. Quando a base não sustenta uma resposta, sinaliza a incerteza e escala para um canal humano.

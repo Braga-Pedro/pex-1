@@ -10,13 +10,13 @@ Este repositório organiza a conclusão do **PEX (Projeto de Extensão)** do cur
 
 ### `projeto/blindagem` — nova
 
-**Assistente de resposta à exposição de dados pessoais.** A partir do perfil de exposição de uma pessoa — sem pedir nem armazenar CPF — gera um plano de ação priorizado e **verificável**, com fontes oficiais citadas, e acompanha a execução. Não é verificador de vazamento: essa parte foi descartada por LGPD, risco e inviabilidade de portfólio.
+**Assistente de resposta à exposição de dados pessoais.** A partir do perfil de exposição de uma pessoa — sem pedir nem armazenar CPF — gera um plano de ação priorizado e **verificável**, com fontes oficiais citadas, e acompanha a execução. Cobre duas superfícies: exposição de **dados** (o que se sabe sobre você) e exposição de **voz** (o que se consegue imitar de você, com o Protocolo Familiar de Verificação contra golpe de voz clonada). Não é verificador de vazamento nem detector de deepfake — as duas partes foram descartadas por decisão de projeto.
 
 | | |
 |---|---|
-| **Dor** | Ferramentas existentes dizem que você foi exposto, nenhuma diz o que fazer, em que ordem, e como verificar |
+| **Dor** | Ferramentas existentes dizem que você foi exposto, nenhuma diz o que fazer, em que ordem, e como verificar. Todo alerta sobre voz clonada recomenda palavra-código, e nenhum ensina a implantar uma |
 | **Organização do PEX** | Oficina em grupo já constituído (centro de convivência, igreja, associação) — contato pontual, sem parceria longa |
-| **Diferencial** | Passo verificável, arquitetura sem dado pessoal, motor de regras determinístico fora do LLM |
+| **Diferencial** | Passo verificável, arquitetura sem dado pessoal, motor de regras determinístico fora do LLM, e a tese de tirar a voz do papel de fator de autenticação em vez de tentar detectar deepfake |
 | **Stack** | Java 21 + Spring Boot + Spring AI + pgvector |
 
 ```

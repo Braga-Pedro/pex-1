@@ -14,7 +14,7 @@ Um assistente que, a partir do **perfil de exposição** de uma pessoa — sem n
 
 Cobre duas superfícies: a **exposição de dados** (o que se sabe sobre você) e a **exposição de voz e identidade** (o que se consegue imitar de você). A segunda é a fronteira nova, e é onde o projeto tem menos concorrência.
 
-Não é um verificador de vazamento nem um detector de deepfake. As razões estão na seção 4 — são as duas decisões mais importantes deste documento.
+Não é um verificador de vazamento, um detector de deepfake nem um direcionador de links — a seção 4 explica cada uma dessas fronteiras.
 
 ---
 
@@ -94,6 +94,22 @@ Todo o componente de voz decorre disso.
 O sistema **não integra nem implementa síntese de voz**, nem para demonstração, nem para treinamento, nem em ambiente de teste. O ensaio descrito na seção 6.6 é encenado por uma pessoa, a partir de roteiro em texto.
 
 Esta é a fronteira que separa ferramenta defensiva de ferramenta dual-use, e ela vai **codificada em teste automatizado**, não apenas escrita aqui.
+
+### 4.4 Não é um direcionador de links
+
+Este item é esclarecimento de escopo, não proibição — e desfaz a leitura mais provável de quem só ouviu a descrição curta.
+
+A analogia é **Google × GPS**. O Google devolve links sobre a cidade; o GPS diz "vire à direita agora". O produto aqui é a **rota**, não o acervo.
+
+| Camada | O que produz | Usa LLM? |
+|---|---|---|
+| Entrevista + motor de regras + plano | Sequência personalizada e priorizada de ações, cada uma com critério de verificação | **Não** — é código |
+| Protocolo Familiar | Artefato físico: cartão impresso, palavra-código combinada, cobertura da família | **Não** |
+| Perguntas abertas (RAG) | Resposta com fonte citada | Sim — e é a camada secundária |
+
+Um direcionador diz *"leia a cartilha do CERT.br"*. Este sistema diz: *"no seu caso, o primeiro passo é bloquear o consignado — leva 5 minutos, é por aqui, e você saberá que funcionou quando o status mudar no Meu INSS em até 24h. Feito isso, o segundo passo é..."*
+
+E o link para o canal oficial tem função própria, que não é economia de esforço: **num tema em que a pessoa precisa desconfiar de tudo, mandar ao canal oficial é a prova de legitimidade**. Um sistema que dissesse "confie em mim, digite seus dados aqui" estaria ensinando exatamente o comportamento que o golpe explora. Não intermediar é pedagogia de segurança — e é a mesma razão pela qual o Banco Central não autoriza intermediários no Registrato.
 
 ---
 
@@ -192,7 +208,43 @@ O roteiro é curto de propósito. Sob pânico, ninguém executa uma lista de dez
 
 ---
 
-## 7. Os quatro diferenciais
+## 7. A interface
+
+**Decisão de produto que também resolve custo: o chat não é a porta de entrada.** Chat aberto intimida usuário leigo, convida pergunta fora de escopo e gasta inferência à toa. A entrada é um wizard de perguntas fechadas.
+
+```
+┌──────────────────────────────────┐   ┌──────────────────────────────────┐
+│  ●●●●○○○○  4 de 8                │   │  Seu plano · 6 ações             │
+│                                  │   │                                  │
+│  Você é aposentado ou            │   │  ┌────────────────────────────┐  │
+│  pensionista do INSS?            │   │  │ 1  Bloquear consignado     │  │
+│                                  │   │  │    5 min · ALTO IMPACTO  ▾ │  │
+│   ┌──────────┐  ┌──────────┐     │   │  └────────────────────────────┘  │
+│   │   Sim    │  │   Não    │     │   │  ┌────────────────────────────┐  │
+│   └──────────┘  └──────────┘     │   │  │ 2  Senha do chip           │  │
+│   ┌────────────────────────┐     │   │  │    10 min · ALTO         ▾ │  │
+│   │      Não tenho certeza │     │   │  └────────────────────────────┘  │
+│   └────────────────────────┘     │   │  ☐ 3  Combinar palavra-código   │
+│                                  │   │  ☑ 4  2 etapas no WhatsApp      │
+│  ← Voltar                        │   │                                  │
+└──────────────────────────────────┘   │  [ Imprimir ]  [ Tirar dúvida ]  │
+                                        └──────────────────────────────────┘
+```
+
+**Regras de desenho, e o porquê de cada uma:**
+
+- **Uma pergunta por tela, botão grande, linguagem coloquial.** O público inclui pessoas de 70 anos ou mais, quase sempre no celular.
+- **"Não tenho certeza" é resposta de primeira classe**, não escape. O motor assume o pior caso e o plano ganha um passo a mais: *como descobrir*. Isso importa porque quem não sabe se tem chave Pix cadastrada costuma ser justamente quem está mais exposto.
+- **8 a 12 perguntas, cerca de 3 minutos.** Sem login, sem cadastro, sem CPF.
+- **O plano em cartões**, ordenados por impacto e expansíveis. O checkbox "já fiz" grava **no navegador**, nunca no servidor — coerente com a decisão de não armazenar nada.
+- **"Imprimir" é botão de primeira classe.** O público-alvo confia mais em papel na geladeira do que em aplicativo, e o cartão de contra-verificação só funciona se estiver ao lado do telefone.
+- **"Tirar dúvida" aparece só no fim.** É o único ponto onde a camada RAG entra.
+
+**Tela de facilitador.** Modo separado, para conduzir a oficina: roteiro da atividade, o ensaio da ligação e a contagem de famílias que saíram com palavra-código combinada — que é a métrica de impacto do relatório do PEX.
+
+---
+
+## 8. Os quatro diferenciais
 
 **1. O passo verificável.** Toda orientação de segurança termina em "troque suas senhas" e ninguém sabe se ficou mais seguro. Aqui, cada passo tem critério objetivo de conclusão. É o que separa conselho de resultado.
 
@@ -206,7 +258,7 @@ O roteiro é curto de propósito. Sob pânico, ninguém executa uma lista de dez
 
 ---
 
-## 8. Arquitetura
+## 9. Arquitetura
 
 | Componente | Papel |
 |---|---|
@@ -224,7 +276,28 @@ O roteiro é curto de propósito. Sob pânico, ninguém executa uma lista de dez
 
 ---
 
-## 9. Salvaguardas — resumo
+## 10. Custo operacional
+
+A pergunta "quanto custa por pergunta e resposta" tem uma resposta curta: **quase nada, porque a maior parte do produto não chama modelo nenhum.**
+
+O motor de regras é código. O plano de ação, o cartão de contra-verificação e o protocolo familiar são determinísticos. A inferência só entra na camada de perguntas abertas, que é secundária por desenho.
+
+**Ordem de grandeza.** Uma pergunta típica de RAG consome cerca de 3.000 tokens de entrada (prompt fixo + 3 a 5 trechos recuperados + a pergunta) e 300 de saída. Com um modelo pequeno da faixa de US$ 1 por milhão de tokens de entrada e US$ 5 de saída, isso dá **cerca de US$ 0,005 por pergunta** — uma oficina com 30 participantes fazendo 5 perguntas cada custa **menos de um dólar**. Modelos maiores multiplicam isso por 3 a 5. Para a tarefa em questão — "resuma estes trechos citando a fonte" — o modelo pequeno é suficiente.
+
+**Mitigações, por ordem de impacto:**
+
+1. **Não usar LLM onde regra resolve.** Já é decisão de arquitetura e é de longe a maior economia.
+2. **FAQ pré-computado.** Numa oficina as dúvidas são as mesmas 20 a 30 perguntas. Responda uma vez, revise à mão, sirva direto.
+3. **Cache semântico.** Pergunta nova com alta similaridade a uma já respondida devolve a resposta em cache. Derruba a maior parte do que sobrou.
+4. **Prompt caching.** O prompt de sistema e as instruções de citação são fixos, e leitura de cache custa uma fração do normal. Cuidado: cache é casamento de prefixo — conteúdo estável primeiro, pergunta variável por último, ou o cache nunca acerta.
+5. **Teto de tokens de saída.** Resposta de orientação de segurança precisa ser curta de qualquer forma.
+6. **Modelo local em desenvolvimento.** Custo zero enquanto se constrói e testa. O Spring AI abstrai o provedor, então trocar entre local e hospedado é configuração, não reescrita.
+
+**Consequência de projeto:** o custo de operação não é obstáculo para manter a ferramenta pública e gratuita depois do PEX — o que preserva a hipótese de produto descrita na seção 13.
+
+---
+
+## 11. Salvaguardas — resumo
 
 Estas restrições são requisitos de produto, verificados por teste automatizado no CI:
 
@@ -238,7 +311,7 @@ Estas restrições são requisitos de produto, verificados por teste automatizad
 
 ---
 
-## 10. Como isso vira PEX
+## 12. Como isso vira PEX
 
 ### ⚠️ O ponto a resolver primeiro
 
@@ -270,7 +343,7 @@ O amigo continua no plano, como **piloto**: é com ele que você testa a ferrame
 
 ---
 
-## 11. Por que esta linha atende aos três objetivos ao mesmo tempo
+## 13. Por que esta linha atende aos três objetivos ao mesmo tempo
 
 | Objetivo | Como é atendido |
 |---|---|
@@ -282,20 +355,20 @@ Some-se o que a ideia original buscava: **dependência mínima de terceiros**. O
 
 ---
 
-## 12. Riscos e como tratá-los
+## 14. Riscos e como tratá-los
 
 | Risco | Tratamento |
 |---|---|
 | Pessoa física não ser aceita como beneficiária do PEX | Formato de oficina em grupo; confirmar no roteiro antes de investir |
 | Escopo maior do que 2h/dia comporta | Motor de regras, protocolo familiar e RAG são fases separadas (PEX 3, 4 e 5), nunca simultâneas |
 | Dar orientação errada e causar dano | Corpus exclusivamente oficial, citação obrigatória, abstenção conservadora, motor determinístico e auditável |
-| O ensaio ou o reconhecimento de padrão serem mal utilizados | Salvaguardas da seção 9 codificadas em teste automatizado |
+| O ensaio ou o reconhecimento de padrão serem mal utilizados | Salvaguardas da seção 11 codificadas em teste automatizado |
 | Falsa sensação de segurança | O sistema nunca afirma que uma ligação é legítima; ele só ensina a verificar por outro canal |
 | Fontes oficiais mudarem procedimento | Data de verificação registrada por item do plano; revisão a cada semestre do PEX |
 
 ---
 
-## 13. Fontes
+## 15. Fontes
 
 **Exposição de dados**
 - [Portal da Transparência — Auxílio Emergencial](https://portaldatransparencia.gov.br/download-de-dados/auxilio-emergencial)

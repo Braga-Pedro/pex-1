@@ -238,6 +238,29 @@ O roteiro é curto de propósito. Sob pânico, ninguém executa uma lista de dez
 
 **d) Cobertura familiar.** O protocolo só funciona se todos os elos aderirem — a pessoa mais vulnerável da família costuma ser a que menos usa tecnologia. O sistema acompanha quem já foi coberto e gera o material para alcançar quem falta. **Métrica: percentual de familiares cobertos**, não "material lido".
 
+### 6.7 Métricas de uso anônimas
+
+Existe porque a distribuição não é uma sala com lista de presença — é um link enviado ao grupo do WhatsApp da CTF, que reúne gente de várias localidades (seção 12). Sem alguma forma de contagem, não há como saber se a ferramenta chegou a alguém, nem sustentar a métrica de cobertura familiar do item **d)** acima ou a evidência de alcance para o relatório do PEX.
+
+O desafio é medir isso **sem contradizer a decisão de zero dado pessoal** (seções 4, 8 e 11). A solução é agregar, nunca identificar:
+
+**O que é contado**, sempre como evento anônimo:
+
+- Sessão iniciada (wizard começou)
+- Wizard concluído, com a contagem de **quais vetores de risco apareceram** — nunca as respostas cruas de quem respondeu
+- Cartão impresso ou PDF do plano baixado
+- Pergunta feita à camada RAG — mesma contagem que alimenta o monitoramento de custo da seção 10
+- Evento autodeclarado "combinei a palavra-código", disparado quando a pessoa marca esse item como concluído — é o que alimenta a métrica de cobertura familiar
+
+**Como permanece anônimo:**
+
+- Cada evento carrega um **token de sessão gerado no navegador**, aleatório, sem vínculo com telefone, nome ou IP. Ele existe só para deduplicar o funil (iniciou → concluiu → agiu) dentro da mesma sessão, e é descartado em poucas horas.
+- O servidor nunca grava o evento individual com esse token por muito tempo — só **incrementa contadores agregados**: quantas sessões iniciaram hoje, quantos planos foram gerados, quantas pessoas marcaram que combinaram a palavra-código.
+- Nenhum endereço IP é armazenado de forma permanente. Se for necessário para conter abuso automatizado, é truncado e descartado em janela curta — nunca persistido.
+- O que o facilitador vê é sempre um número agregado — *"312 sessões iniciadas, 190 planos concluídos, 74 pessoas marcaram que combinaram a palavra-código"* — nunca uma lista de quem fez o quê.
+
+**O limite honesto:** é métrica autodeclarada, não verificada — alguém pode marcar "combinei a palavra-código" sem ter combinado de fato. Isso é aceitável: o objetivo é medir alcance para o relatório do PEX, não auditar cada família. Exigir prova quebraria a própria decisão de não coletar dado pessoal — o limite faz parte do desenho, não é uma lacuna a corrigir depois.
+
 ---
 
 ## 7. A interface
@@ -303,6 +326,7 @@ O roteiro é curto de propósito. Sob pânico, ninguém executa uma lista de dez
 | **Spring Security** | Sessão anônima; sem cadastro, sem credencial de terceiros |
 | **Testcontainers + JUnit** | Integração com Postgres real em contêiner |
 | **Docker + GitHub Actions** | Pipeline com a suíte de avaliação e os testes de salvaguarda como etapas que reprovam o build |
+| **Contador de eventos agregados** | Registra sessão iniciada, plano gerado, cartão impresso, pergunta ao RAG e "palavra-código combinada" — sempre como incremento agregado no mesmo Postgres, nunca como registro individual persistente |
 
 **Decisão de arquitetura central:** o plano de ação é gerado por **motor de regras determinístico**, não por LLM. O modelo atua só na camada de perguntas abertas. Orientação de segurança precisa ser auditável e reproduzível — a mesma entrada tem de gerar a mesma saída, sempre, e alguém precisa poder apontar qual regra produziu cada recomendação. Saber **onde não usar IA** é sinal de maturidade mais forte do que usá-la em todo lugar.
 
@@ -340,6 +364,7 @@ Estas restrições são requisitos de produto, verificados por teste automatizad
 - [ ] O ensaio exige consentimento explícito e não gera conteúdo pronto para envio a terceiros
 - [ ] Toda resposta da camada RAG cita a fonte ou se abstém
 - [ ] O motor de regras é determinístico e auditável passo a passo
+- [ ] As métricas de uso são agregadas e não permitem reidentificar nenhuma pessoa (seção 6.7)
 
 ---
 
@@ -351,15 +376,34 @@ O PEX exige uma **organização** — empresa, ONG, escola, igreja, associação
 
 **Confirme isso no roteiro da sua disciplina antes de planejar em cima.**
 
-### A solução que preserva a vantagem da ideia
+### A organização: CTF
 
-Mantenha a ferramenta como produto individual e faça a **ação de extensão em formato de oficina**, num grupo que já se reúne: centro de convivência de idosos, grupo de terceira idade de igreja, associação de bairro, escola, sindicato.
+A oficina acontece na **CTF**, a assessoria esportiva onde o autor treina. Isso resolve o item acima de forma direta: é organização de fato (não é o amigo individual do piloto), o acesso já existe — sem abordagem fria, sem negociar Termo de Autorização com desconhecido — e as turmas já se reúnem em horário fixo, o que facilita agendar a oficina dentro de uma aula em vez de convocar um evento à parte.
 
-Isso conserva o que motivou a ideia — **um único contato pontual**, sem parceria de dois anos — e ataca o público mais vitimado do país. Uma oficina rende lista de presença, fotos e depoimentos: evidência farta para o relatório.
+**A mistura de idades na turma não é um obstáculo — é o desenho certo para este produto.** A CTF tem alunos de idades bem diferentes, incluindo pessoas de 60 anos ou mais, na mesma sala. Isso dá ao mesmo público dois papéis que a ferramenta já foi construída para atender:
 
-O amigo continua no plano, como **piloto**: é com ele que você testa a ferramenta e grava o vídeo de uso antes de levar a um grupo.
+| Perfil na turma | Papel na oficina | Componente que usa |
+|---|---|---|
+| Aluno 60+ | Beneficiário direto — sai com o próprio plano de ação e sua palavra-código | Entrevista guiada (6.1), plano (6.3), protocolo familiar (6.6) |
+| Aluno mais jovem, com pais ou avós fora da sala | Multiplicador — sai preparado para rodar o protocolo com o parente que não está ali | Modo assistido (6.5) |
 
-**O componente de voz é o que torna a oficina memorável.** Uma palestra sobre proteção de dados é esquecida na semana seguinte. Um ensaio ao vivo, em que a pessoa percebe que teria caído, não é. E o resultado é contável: quantas famílias saíram com palavra-código combinada.
+Sem essa mistura, a oficina alcançaria só quem está na sala. Com ela, cada aluno mais jovem é um vetor para pelo menos um familiar mais velho ausente — o que multiplica o alcance sem precisar de uma segunda organização.
+
+**Consequência para o desenho da oficina:** ela roda em duas trilhas na mesma sessão, anunciadas assim, sem separar fisicamente a turma — "proteja você" para quem quer sair com o próprio plano, "proteja quem você ama" para quem vai levar o protocolo para um parente. As duas trilhas passam pela mesma entrevista e pelo mesmo cartão impresso; a diferença é só para quem o plano se aplica. O ensaio da seção 6.6 pode ser demonstrado com um par que consinta fazer a encenação na frente da turma — sempre com script em texto, nunca com voz sintetizada — e o resto da turma observa e depois pratica em duplas por conta própria.
+
+Isso conserva o que motivou a ideia original — **contato pontual, sem parceria de dois anos** — e ataca o público mais vitimado do país mesmo quando ele não está fisicamente na sala. Uma oficina rende lista de presença, fotos e depoimentos: evidência farta para o relatório.
+
+O amigo do piloto original continua no plano, mas antes da CTF: é com ele que a ferramenta é testada e o vídeo de uso é gravado, longe da plateia.
+
+**O componente de voz é o que torna a oficina memorável.** Uma palestra sobre proteção de dados é esquecida na semana seguinte. Um ensaio ao vivo, em que a pessoa percebe que teria caído, não é. E o resultado é contável de duas formas: quantos alunos 60+ saíram com plano próprio, e quantos alunos mais jovens saíram preparados para rodar o protocolo com um parente ausente.
+
+### Como chega até quem não está na sala
+
+A distribuição não é só a aula presencial: é um **convite de acesso enviado ao grupo do WhatsApp da CTF**, que reúne alunos de várias localidades — inclusive gente que não frequenta mais a unidade física, mas continua no grupo. O link do wizard vai direto ali, sem exigir que a pessoa esteja numa aula específica no dia da oficina.
+
+Isso multiplica o alcance, mas tira a ferramenta natural de evidência de uma oficina presencial: não existe cabeça para contar, nem lista de presença que cubra quem acessou pelo celular em outra cidade. **É por isso que a seção 6.7 existe** — sem contadores agregados, não há como saber se o link chegou a alguém, nem sustentar a métrica de cobertura familiar do componente 6.6 no relatório do PEX.
+
+A evidência do PEX passa a ter duas pernas: a **qualitativa**, da sessão presencial na CTF (fotos, lista de quem participou ao vivo, o ensaio demonstrado), e a **quantitativa**, dos contadores agregados do link distribuído no grupo (sessões iniciadas, planos concluídos, palavras-código combinadas). Nenhuma das duas identifica quem usou — a primeira registra presença num evento, não uso da ferramenta; a segunda mede uso sem saber quem é.
 
 ### Cronograma
 
@@ -367,11 +411,13 @@ O amigo continua no plano, como **piloto**: é com ele que você testa a ferrame
 |---|---|
 | **2** | Pesquisa e desenho: mapear vetores de risco reais no Brasil, montar o corpus oficial, desenhar o motor de regras e o protocolo familiar. Sem código de produção — é o semestre de estudar Java e Spring |
 | **3** | MVP: entrevista guiada, motor de regras e plano de ação gerado. Piloto com o amigo, com registro em vídeo |
-| **4** | Protocolo Familiar completo: cartão imprimível, assistente de palavra-código e ensaio guiado. **Primeira oficina** — formato liberado a partir deste PEX |
-| **5** | Camada RAG sobre o corpus oficial, modo assistido e acompanhamento de progresso. Segunda oficina, com ajustes do que a primeira revelou |
-| **6** | Observabilidade, medição de impacto (planos gerados, passos concluídos, famílias cobertas) e publicação aberta da ferramenta |
+| **4** | Protocolo Familiar completo: cartão imprimível, assistente de palavra-código e ensaio guiado, mais os contadores anônimos mínimos da seção 6.7 (sessão iniciada, plano concluído, palavra-código combinada). **Primeira oficina** na CTF, com o convite distribuído também no grupo do WhatsApp — formato liberado a partir deste PEX |
+| **5** | Camada RAG sobre o corpus oficial (perguntas contadas nos mesmos contadores agregados), modo assistido e acompanhamento de progresso. Segunda oficina, com ajustes do que a primeira revelou |
+| **6** | Painel sobre os contadores agregados, medição de impacto ao longo do tempo e publicação aberta da ferramenta |
 
 > Nota: o Protocolo Familiar subiu para o PEX 4 e o RAG desceu para o 5. Motivo: o protocolo é a peça de maior impacto social e a que faz a oficina funcionar — e a oficina só é permitida a partir do quarto PEX. O RAG é valioso, mas é conforto; o cartão impresso salva alguém antes.
+>
+> Nota 2: os contadores anônimos também entram já no PEX 4, não no 6. Motivo: a distribuição por link no grupo do WhatsApp (seção 12) elimina a lista de presença como evidência de alcance — sem contagem desde a primeira oficina, não há como provar alcance nem cobertura familiar no relatório daquele semestre.
 
 ---
 
@@ -397,6 +443,8 @@ Some-se o que a ideia original buscava: **dependência mínima de terceiros**. O
 | O ensaio ou o reconhecimento de padrão serem mal utilizados | Salvaguardas da seção 11 codificadas em teste automatizado |
 | Falsa sensação de segurança | O sistema nunca afirma que uma ligação é legítima; ele só ensina a verificar por outro canal |
 | Fontes oficiais mudarem procedimento | Data de verificação registrada por item do plano; revisão a cada semestre do PEX |
+| Link do grupo do WhatsApp vazar para fora do público-alvo (uso em escala, bot, scraping do RAG) | Contadores da seção 6.7 servem também para detectar pico anômalo de sessões; limite de taxa por sessão na camada RAG, coerente com o teto de custo da seção 10 |
+| Aluno 60+ não conseguir acessar o link sozinho, por barreira digital, não por falta de interesse | A sessão presencial na CTF cobre esse caso ao vivo; o modo assistido (6.5) existe para quem prefere ser guiado por outra pessoa em vez de sozinho pelo celular |
 
 ---
 

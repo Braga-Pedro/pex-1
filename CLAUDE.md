@@ -30,7 +30,8 @@ Consequências práticas:
 ## Estrutura dos arquivos
 
 **Raiz do repositório (`main`):**
-- `README.md` — porta de entrada e panorama das regras institucionais do PEX: diagnóstico, formato do PEX 1 (teórico ou prático conforme o período de ingresso), roadmap de entrega, erros a evitar. Contém uma "Data de referência" que deve ser atualizada se o roteiro for revisado.
+- `README.md` — porta de entrada e panorama das regras institucionais do PEX: diagnóstico, formato do PEX 1 (relatório teórico, confirmado para todo mundo independente do período de ingresso — ver seção correspondente) e do PEX 2 em diante (prático), roadmap de entrega, erros a evitar. Contém uma "Data de referência" que deve ser atualizada se o roteiro for revisado.
+- `PEX1-RELATORIO.md` — rascunho do relatório do PEX 1: artigo escolhido, resumo e respostas às perguntas do roteiro. É rascunho, não versão final — precisa ser conferido contra o roteiro real do perfil do usuário antes do envio.
 - `CLAUDE.md` — este arquivo.
 - `PROJETOS.md` — índice das linhas de projeto, com o motivo de cada uma existir e o que têm em comum.
 
@@ -51,5 +52,5 @@ Documentação numerada na ordem de leitura, começando por `00-conceito.md`. O 
 - O usuário está no 5º semestre do curso, sem nenhum PEX entregue ainda (situação de atraso/DP) — os PEX são cumulativos, então velocidade de regularização importa.
 - O usuário é dev pleno (PHP, Laravel, Filament, Vue, JS, Docker, PostgreSQL, Python) com repertório em embeddings/RAG. O projeto escolhido precisa atender três objetivos ao mesmo tempo: cumprir os PEX, render portfólio no LinkedIn e ter chance de virar produto. Disponibilidade real: 2h/dia.
 - Ao atualizar `README.md`, `PROJETOS.md`, os arquivos de `projeto/` ou `pex-context/pex-context.md`, mantenha o estilo existente: seções curtas em pt-BR, checklists com `- [ ]`, tabelas comparativas quando útil, e uma linha "Data de referência" atualizada.
-- Ao extrair informação dos PDFs para as notas, confirme sempre contra o roteiro atual na Plataforma de Aulas (desde 2026.1 é a única via de entrega, para veteranos e calouros) — os PDFs institucionais podem estar desatualizados em relação ao formato vigente. O `README.md` já registra duas divergências confirmadas: o PEX 1 teórico vale só para calouros a partir de 25.3, e a plataforma Work Love saiu de cena.
+- Ao extrair informação dos PDFs para as notas, confirme sempre contra o roteiro atual na Plataforma de Aulas (desde 2026.1 é a única via de entrega, para veteranos e calouros) — os PDFs institucionais podem estar desatualizados em relação ao formato vigente. O `README.md` já registra divergências confirmadas: o PEX 1 é relatório teórico para todo mundo (o que muda é a etapa, não o período de ingresso — confirmado por atendimento oficial em 24/08/2026), e a plataforma Work Love saiu de cena.
 - Não há necessidade de comandos de build/lint/test — qualquer tarefa aqui é edição de texto/markdown ou pesquisa de conteúdo nos PDFs anexados.

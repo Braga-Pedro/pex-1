@@ -125,6 +125,7 @@ A burocracia (carta + termo assinado) depende de terceiros, então a organizaç�
 | Arquivo | Conteúdo |
 |---|---|
 | `README.md` | Este documento — panorama das regras institucionais e roadmap de entrega |
+| [`PEX1-RELATORIO.md`](PEX1-RELATORIO.md) | Rascunho do relatório do PEX 1 — artigo escolhido, resumo e respostas às perguntas do roteiro |
 | [`PROJETOS.md`](PROJETOS.md) | Índice das linhas de projeto (uma por branch) |
 | [`pex-context/`](pex-context/) | PDFs oficiais, transcrição da monitoria e índice das fontes |
 | `CLAUDE.md` | Instruções para o Claude Code neste repositório |

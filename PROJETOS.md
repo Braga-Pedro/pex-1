@@ -15,7 +15,7 @@ Este repositório organiza a conclusão do **PEX (Projeto de Extensão)** do cur
 | | |
 |---|---|
 | **Dor** | Ferramentas existentes dizem que você foi exposto, nenhuma diz o que fazer, em que ordem, e como verificar. Todo alerta sobre voz clonada recomenda palavra-código, e nenhum ensina a implantar uma |
-| **Organização do PEX** | Oficina em grupo já constituído (centro de convivência, igreja, associação) — contato pontual, sem parceria longa |
+| **Organização do PEX** | CTF, assessoria esportiva onde o autor treina — oficina presencial com alunos de idades diversas (inclui 60+) e convite distribuído no grupo do WhatsApp, que alcança gente de outras localidades |
 | **Diferencial** | Passo verificável, arquitetura sem dado pessoal, motor de regras determinístico fora do LLM, e a tese de tirar a voz do papel de fator de autenticação em vez de tentar detectar deepfake |
 | **Stack** | Java 21 + Spring Boot + Spring AI + pgvector |
 

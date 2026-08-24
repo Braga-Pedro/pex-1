@@ -5,7 +5,7 @@ Espaço de trabalho para organizar a conclusão dos **Projetos de Extensão** do
 **Não é um projeto de software.** É contexto institucional + notas de planejamento. O código, quando existir, vive nas branches de projeto.
 
 **Situação atual:** 5º semestre, 0 de 6 PEX entregues
-**Data de referência:** 20/08/2026
+**Data de referência:** 24/08/2026
 
 > ⚠️ As regras abaixo foram conferidas contra as páginas oficiais da Descomplica (links no fim). Onde houver divergência com os PDFs em [`pex-context/`](pex-context/), **o roteiro que aparece no seu perfil na plataforma vence** — ele é individualizado por aluno, curso e período.
 
@@ -35,18 +35,17 @@ Extensão universitária obrigatória: aplicar o conteúdo do curso em situaçã
 
 ---
 
-## ⚠️ O ponto crítico: o "PEX 1 teórico" pode não ser o *seu* PEX 1
+## PEX 1 é teórico para todo mundo — confirmado pela faculdade
 
-A regra oficial condiciona o formato do PEX 1 ao **período de ingresso**:
+> **Correção (24/08/2026):** a versão anterior deste documento condicionava o formato do PEX 1 ao período de ingresso (calouro 25.3+ = teórico, veterano = prático). **Isso estava errado.** O atendimento da Descomplica confirmou por escrito que o que muda o formato é a **etapa** (PEX 1 × PEX 2 em diante), não o período de ingresso nem a condição de veterano.
 
-| Público | Formato do PEX 1 |
-|---|---|
-| **Calouros a partir de 25.3** (ago/2025) | **Teórico** — roteiro respondido na plataforma, avaliando se você entendeu o que é e como se faz extensão. Sem visita, sem carta, sem termo. |
-| **Veteranos** (ingresso anterior) | **Prático** — trabalho de campo em uma organização/comunidade, com envio de evidências. |
+A resposta oficial, na íntegra:
 
-Ingresso por volta de **2024.1** → grupo **veterano**. Ou seja: existe chance real de o PEX 1 pendente **não ser** o roteiro teórico, e sim já exigir organização, carta de apresentação, termo de autorização e evidências fotográficas.
+> *"O que muda não é o período, é a etapa do PEX: o PEX 1 é teórico para todo mundo, então nele o formato é relatório mesmo. Do PEX 2 em diante, é projeto prático, e isso vale igual para quem está no 4° período ou em qualquer outro, veterano ou não."*
 
-**Isso muda completamente o esforço e o prazo necessários.** Resolver isso é o item zero — veja a Fase 0 abaixo.
+Para o seu caso — 5º semestre, nenhum PEX entregue — **o PEX 1 pendente é relatório, ponto final.** Sem organização, sem carta de apresentação, sem termo de autorização, sem evidência fotográfica nessa etapa. A incerteza que motivava a Fase 0 abaixo está resolvida: o caminho é sempre o da Fase 1A.
+
+A diferença de veterano segue existindo, só que em outro lugar: **a partir do PEX 2**, todo mundo — veterano ou não — segue o formato prático.
 
 ---
 
@@ -80,14 +79,12 @@ A Work Love (plataforma de carreiras antiga) saiu de cena. Consequência prátic
 **Faça isso antes de escrever qualquer linha.** É o que define todo o resto.
 
 - [ ] Abrir Plataforma de Aulas → Disciplinas → Projeto de Extensão → **PEX I**
-- [ ] Ler o **roteiro** e classificar o formato:
-  - **Teórico** → resumo de artigo/leitura + respostas às perguntas do roteiro
-  - **Prático** → organização + carta + termo + evidências
+- [ ] Ler o **roteiro** do PEX I na Plataforma de Aulas e anotar as perguntas exatas — o formato já está confirmado como relatório teórico, mas o enunciado específico (quantas perguntas, o que cada uma pede) varia por perfil e só está no seu acesso
 - [ ] Anotar o **prazo exato** de entrega
 - [ ] Verificar se há algum PEX em situação de **DP**. Se sim, abrir chamado em Serviços **imediatamente** — o deferimento tem fila e não está sob seu controle
-- [ ] Na dúvida sobre o formato: assistente virtual da plataforma, **monitoria semanal (segundas)** ou chamado com o tutor. Qualquer um deles vale mais que os PDFs em `pex-context/`
+- [ ] Na dúvida sobre o enunciado específico: assistente virtual da plataforma, a **monitoria semanal exclusiva de PEX** (link de acesso enviado por e-mail — confirme se é a mesma dos encontros de segunda-feira já referenciados aqui, ou uma turma própria) ou chamado com o tutor. Qualquer um deles vale mais que os PDFs em `pex-context/`
 
-### Fase 1A — se o roteiro for teórico
+### PEX 1 — passo a passo
 
 - [ ] Escolher artigo/texto da área de ADS
 - [ ] **Fichar durante a leitura**: do que trata / por que escolhi / como conecta com o curso
@@ -98,7 +95,9 @@ A Work Love (plataforma de carreiras antiga) saiu de cena. Consequência prátic
 
 Onde buscar material: Google Acadêmico, SciELO, Periódicos CAPES, ACM Digital Library, IEEE Xplore — ou capítulos da bibliografia do curso (Pressman, Sommerville, Tanenbaum), se o roteiro aceitar.
 
-### Fase 1B — se o roteiro for prático
+### PEX 2 em diante — visão geral do formato prático
+
+A partir do PEX 2, **todo mundo segue o mesmo caminho** — veterano ou não:
 
 - [ ] Definir a **organização**: empresa, ONG, escola, igreja, associação de bairro. **Não pode ser CNPJ próprio.** Pode ser onde você trabalha, desde que em **outro setor** e com autorização formal
 - [ ] Baixar e preencher a **Carta de Apresentação** disponível na plataforma
@@ -107,11 +106,7 @@ Onde buscar material: Google Acadêmico, SciELO, Periódicos CAPES, ACM Digital 
 - [ ] Escrever o relatório na estrutura **problema → desenvolvimento → conclusão**
 - [ ] Consolidar tudo em PDF único → enviar
 
-### Fase 2 — depois do PEX 1 aprovado
-
-- [ ] Engatar o **PEX 2**, que é prático com certeza. A burocracia (carta + termo assinado) depende de terceiros, então a organização-alvo precisa ser definida **com antecedência**
-- [ ] A linha de projeto ativa (`projeto/support-mcp`) serve de fio condutor para os PEX 2–6 — levantamento de requisitos, modelagem, prototipação, desenvolvimento, entrega e treinamento, uma fase por semestre
-- [ ] Ressalva: **palestra / treinamento como formato de PEX só é aceito a partir do 4º PEX**
+A burocracia (carta + termo assinado) depende de terceiros, então a organização-alvo precisa ser definida **com antecedência** — idealmente ainda durante o PEX 1. Veja [`PROJETOS.md`](PROJETOS.md) para as linhas de projeto já esboçadas para o formato prático. Ressalva: **palestra / treinamento como formato de PEX só é aceito a partir do 4º PEX**.
 
 ---
 
@@ -142,3 +137,4 @@ Onde buscar material: Google Acadêmico, SciELO, Periódicos CAPES, ACM Digital 
 - [Reprovei no Projeto de Extensão, e agora?](https://no.descomplica.com.br/knowledge/reprovei-no-projeto-de-extens%C3%A3o-e-agora) — Descomplica
 - [Tudo sobre aproveitamento de Projetos de Extensão](https://no.descomplica.com.br/knowledge/tudo-sobre-aproveitamento-de-projetos-de-extens%C3%A3o) — Descomplica
 - PDFs institucionais e transcrição de monitoria em [`pex-context/`](pex-context/)
+- Confirmação por atendimento oficial da Descomplica (e-mail/chat), 24/08/2026 — PEX 1 é relatório teórico para todos os alunos; a diferença de formato é por etapa (PEX 1 × PEX 2 em diante), não por período de ingresso ou condição de veterano

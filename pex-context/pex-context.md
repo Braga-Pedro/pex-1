@@ -14,3 +14,5 @@
 ##### Monitoria sobre o PEX
 - https://youtu.be/MZ7BKJOcdAs?si=HXL4cfBPvZXtqSLw 
 Transcrição do vídeo em: Transcricao monitoria youtube.txt
+##### Confirmação oficial: PEX 1 é teórico para todo mundo (24/08/2026)
+Atendimento da Descomplica (e-mail/chat), respondendo dúvida sobre se o formato do PEX 1 dependia do período de ingresso: "O que muda não é o período, é a etapa do PEX: o PEX 1 é teórico para todo mundo, então nele o formato é relatório mesmo. Do PEX 2 em diante, é projeto prático, e isso vale igual para quem está no 4° período ou em qualquer outro, veterano ou não." Também mencionaram monitoria semanal exclusiva de PEX, com link de acesso enviado por e-mail. Corrigiu uma leitura anterior errada do `README.md` (que condicionava o formato ao período de ingresso).

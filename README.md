@@ -179,6 +179,38 @@ Indexa material **público e oficial**: fascículos "Vazamento de Dados" e "Prot
 
 Responde com **citação obrigatória da fonte** e **abstém-se** quando o corpus não sustenta a resposta, encaminhando ao canal oficial competente. Em orientação de segurança, resposta inventada causa dano direto.
 
+**Quando esta camada dispara, e quando não.** O motor de regras (6.2–6.3) cobre as situações já mapeadas na entrevista — é árvore de decisão fechada. O RAG existe para a **cauda longa**: perguntas que o usuário digita com as próprias palavras e que não batem em nenhum nó da árvore. Aparece em dois pontos da interface: o botão "Tirar dúvida" ao final do plano (seção 7) e o modo facilitador, quando alguém na oficina pergunta algo fora do roteiro.
+
+O padrão é sempre o mesmo: recuperar trecho do corpus, responder só com base nele citando a fonte, ou dizer que não sabe. Nunca gerar resposta livre.
+
+**Exemplo 1 — pergunta fora da árvore, resposta direta com citação**
+
+> Usuário digita: *"recebi um email dizendo que meus dados vazaram e pedindo pra eu clicar num link pra proteger minha conta. é golpe?"*
+
+Não é nenhuma das perguntas fechadas da entrevista. A pergunta é embedada e comparada contra o `VectorStore`; recupera um trecho do fascículo "Vazamento de Dados" da Cartilha CERT.br que descreve exatamente esse padrão. O `ChatClient` recebe o trecho + a pergunta + a instrução fixa de responder só com base no contexto e citar a fonte.
+
+> Resposta: *"Isso é um padrão comum de golpe. Notificação legítima de vazamento nunca pede para você clicar em link — acesse o site oficial digitando o endereço direto, nunca pelo link do e-mail. [Fonte: Cartilha de Segurança CERT.br — Vazamento de Dados]"*
+
+**Exemplo 2 — a pergunta força uma abstenção parcial**
+
+> Usuário digita: *"sou aposentado mas também recebo Bolsa Família por causa da minha neta que mora comigo. preciso bloquear os dois?"*
+
+O corpus tem resposta boa para consignado do INSS, mas não tem orientação equivalente para Bolsa Família — programa com regra diferente. A recuperação traz o trecho do INSS; a similaridade com "Bolsa Família + bloqueio" fica baixa.
+
+> Resposta: *"Para o seu benefício do INSS, o bloqueio do consignado é feito no Meu INSS — já está no seu plano. Não encontrei orientação oficial equivalente para o Bolsa Família na minha base; esse programa não funciona com consignado do mesmo jeito. Confirme diretamente no aplicativo Bolsa Família ou no CadÚnico."*
+
+Responde a parte que o corpus sustenta e é honesto sobre a parte que não sustenta, em vez de inventar uma equivalência que não existe.
+
+**Exemplo 3 — abstenção total, redireciona para autoridade**
+
+> Usuário digita: *"meu vizinho caiu nesse golpe e perdeu R\$ 8 mil. o banco é obrigado a devolver?"*
+
+Pergunta de responsabilidade civil, fora do escopo de qualquer fonte do corpus. A recuperação não traz nada com similaridade suficiente.
+
+> Resposta: *"Não tenho base para afirmar se o banco é obrigado a devolver — isso depende de perícia e, muitas vezes, de decisão judicial. Oriente seu vizinho a registrar B.O. na delegacia on-line, abrir reclamação no Banco Central e no Procon."*
+
+A ferramenta se recusa a chutar e devolve ao canal que de fato decide — a mesma linha de projeto da seção 4: nunca inventar resposta em tema de segurança.
+
 ### 6.5 Modo assistido
 
 O público mais vitimado — idosos — não usa a ferramenta sozinho. O modo assistido gera um **roteiro de acompanhamento** para quem está ajudando e um **resumo imprimível** para deixar com a pessoa. É o componente que transforma a ferramenta em ação de extensão de verdade.

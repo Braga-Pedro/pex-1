@@ -1,12 +1,5 @@
 # PEX 1 — Rascunho do relatório
 
-**Formato confirmado:** relatório teórico — ver [`README.md`](README.md), seção "PEX 1 é teórico para todo mundo".
-**Data de referência:** 24/08/2026
-
-> ⚠️ **Antes de enviar:** este documento é um rascunho estruturado na forma mais comum de roteiro (resumo + 3 perguntas), descrita no `README.md`. Abra o roteiro real no seu perfil da Plataforma de Aulas e confirme se as perguntas batem com as daqui — ajuste antes de enviar. São só 3 tentativas; não gaste a primeira sem conferir.
-
----
-
 ## Artigo escolhido
 
 | | |
@@ -26,13 +19,13 @@
 
 *Rascunho já em palavras próprias — releia e ajuste ao seu estilo antes de enviar; não é para colar direto.*
 
-O artigo analisa a Lei Geral de Proteção de Dados (Lei 13.709/2018) não apenas como texto jurídico, mas através do conceito de "regime de informação", da Ciência da Informação — uma forma de olhar como política, informação e poder se relacionam dentro de uma sociedade. Nessa perspectiva, um regime de informação é formado por atores sociais (quem produz e usa a informação), por dispositivos (as regras que definem o que pode e o que não pode), por artefatos (a tecnologia envolvida) e por ações de informação (como os dados efetivamente circulam entre as partes).
+O artigo analisa a Lei Geral de Proteção de Dados (Lei 13.709/2018) não apenas como texto jurídico, mas através do conceito de "regime de informação", da Ciência da Informação. Uma forma de olhar como política, informação e poder se relacionam dentro de uma sociedade. Nessa perspectiva, um regime de informação é formado por atores sociais (quem produz e usa a informação), por dispositivos (as regras que definem o que pode e o que não pode), por artefatos (a tecnologia envolvida) e por ações de informação (como os dados efetivamente circulam entre as partes).
 
-Os autores mostram que a LGPD funciona como um desses dispositivos: ela define papéis específicos para cada parte envolvida no tratamento de um dado pessoal — o titular (a pessoa a quem o dado pertence), o controlador (quem decide o que fazer com o dado), o operador (quem executa esse tratamento por conta do controlador), o encarregado (o intermediário entre a empresa, o titular e a Autoridade Nacional de Proteção de Dados) e a própria ANPD, como fiscalizadora. O conceito central que sustenta tudo isso é o da **autodeterminação informacional**: a ideia de que é a pessoa quem decide o que acontece com os próprios dados, não a empresa que os coletou.
+Os autores mostram que a LGPD funciona como um desses dispositivos, ela define papéis específicos para cada parte envolvida no tratamento de um dado pessoal. O titular (a pessoa a quem o dado pertence), o controlador (quem decide o que fazer com o dado), o operador (quem executa esse tratamento por conta do controlador), o encarregado (o intermediário entre a empresa, o titular e a Autoridade Nacional de Proteção de Dados) e a própria ANPD, como fiscalizadora. O conceito central que sustenta tudo isso é o da **autodeterminação informacional**: a ideia de que é a pessoa quem decide o que acontece com os próprios dados, não a empresa que os coletou.
 
-O artigo também descreve o **ciclo de vida de um dado pessoal em cinco fases** — coleta, retenção, processamento, compartilhamento e eliminação — e mostra que a LGPD amplia bastante o que já existia na Lei de Acesso à Informação de 2011, que protegia só dados ligados a intimidade e honra. Hoje qualquer dado pessoal está sob esse guarda-chuva, com atenção redobrada para os chamados dados sensíveis (origem étnica, religião, orientação política, dado biométrico).
+O artigo também descreve o **ciclo de vida de um dado pessoal em cinco fases**: coleta, retenção, processamento, compartilhamento e eliminação. Mostra que a LGPD amplia bastante o que já existia na Lei de Acesso à Informação de 2011, que protegia só dados ligados a intimidade e honra. Hoje qualquer dado pessoal está sob esse guarda-chuva, com atenção redobrada para os chamados dados sensíveis (origem étnica, religião, orientação política, dado biométrico).
 
-Por fim, os autores discutem dois instrumentos que colocam a lei em prática: o **Inventário de Dados Pessoais**, que documenta todo tratamento de dado feito por um sistema ou processo, e o **Relatório de Impacto à Proteção de Dados**, que avalia riscos e as medidas para reduzi-los. A conclusão principal é que a LGPD não deve ser lida como uma lei isolada, mas como parte de uma mudança maior — de um Estado burocrático para o que os autores chamam de Estado informacional, em que o controle sobre dado pessoal virou questão central de política pública.
+Por fim, os autores discutem dois instrumentos que colocam a lei em prática: o **Inventário de Dados Pessoais**, que documenta todo tratamento de dado feito por um sistema ou processo, e o **Relatório de Impacto à Proteção de Dados**, que avalia riscos e as medidas para reduzi-los. A conclusão principal é que a LGPD não deve ser lida como uma lei isolada, mas como parte de uma mudança maior, de um Estado burocrático para o que os autores chamam de Estado informacional, em que o controle sobre dado pessoal virou questão central de política pública.
 
 ---
 

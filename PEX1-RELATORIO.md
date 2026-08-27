@@ -48,6 +48,19 @@ Escolhi esse artigo porque segurança da informação e proteção de dados é u
 
 Já aplico boa parte desse conhecimento num projeto pessoal de tecnologia que venho desenvolvendo: um assistente que orienta pessoas expostas por vazamento de dados sobre o que fazer para se proteger. Uma das decisões centrais do projeto — antes mesmo de ler este artigo — foi não armazenar nenhum dado pessoal identificável do usuário: nem CPF, nem nome, nem telefone. Lendo o artigo, percebi que essa escolha é, na prática, uma aplicação direta da autodeterminação informacional que os autores descrevem: em vez de pedir para o usuário confiar seus dados a mim, o sistema devolve a decisão para ele — orienta, mas não retém. O conceito de ciclo de vida do dado também mudou como penso a arquitetura: cada informação que um sistema manipula deveria ter uma resposta clara para "por que ela existe aqui, e quando ela deixa de existir aqui" — não só para dado sensível regulado por lei, mas como princípio geral de projeto.
 
+Essa reflexão sobre ciclo de vida do dado também abre espaço para um debate mais recente, que vai além do que o artigo discute diretamente: onde o dado é processado, não só onde é armazenado. O Brasil vem avançando nisso em 2026 — o governo federal consolidou a Nuvem Soberana, conduzida pelo Ministério da Gestão e Inovação em parceria com Dataprev e Serpro, e o Ministério da Saúde iniciou a migração do CadSUS (mais de 228 milhões de usuários) e da Rede Nacional de Dados em Saúde para infraestrutura sob controle exclusivo do Estado brasileiro. Também tramita a Política Nacional de Data Centers (PL 1.680/2025), que exige que dado de administração pública, defesa, justiça e segurança seja processado e armazenado exclusivamente em território nacional. O argumento de fundo é que dado processado em servidor no exterior fica sujeito à legislação daquele país, o que fragiliza a jurisdição da própria ANPD sobre ele — hoje, segundo levantamentos recentes, só cerca de 40% do dado de brasileiros é processado dentro do território nacional. Vale registrar, porém, que a imprensa especializada aponta um limite real: parte do que hoje é chamado de "nuvem soberana" ainda depende de conexão com servidor estrangeiro, então a soberania efetiva ainda está em construção, não é fato consolidado.
+
+---
+
+## Fontes complementares (parágrafo de soberania de dados, resposta 3)
+
+Usadas para verificar os dados antes de escrever — não fazem parte do artigo resumido, sustentam só a extensão pessoal da resposta 3:
+
+- [Soberania Digital: Brasil consolida a Nuvem de Governo](https://agenciagov.ebc.com.br/noticias/202509/na-soberania-digital-brasil-consolida-a-nuvem-de-governo-como-passo-para-a-independencia-e-a-protecao-de-dados) — Agência Gov
+- [Brasil terá Nuvem Soberana para dados de saúde do SUS](https://www.otempo.com.br/politica/governo/2026/8/13/brasil-tera-nuvem-soberana-para-dados-de-saude-do-sus-saiba-o-que-muda) — O Tempo
+- [Saúde inicia migração de dados do SUS para nuvem nacional](https://agenciabrasil.ebc.com.br/saude/noticia/2026-08/saude-inicia-migracao-de-dados-do-sus-para-nuvem-nacional) — Agência Brasil
+- [Comissão da Câmara aprova Política Nacional de Data Centers](https://www.camara.leg.br/noticias/1281894-comissao-aprova-proposta-que-cria-a-politica-nacional-de-data-center-e-prioriza-acesso-a-energia) — Portal da Câmara dos Deputados
+
 ---
 
 ## Evidência a anexar

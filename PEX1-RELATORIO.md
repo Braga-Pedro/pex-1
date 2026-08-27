@@ -48,31 +48,50 @@ O roteiro trata isso como um quiz de múltipla escolha, separado da atividade ac
 
 ---
 
-## Pendência: escolher o artigo real dentro dos Anais
+## Artigo escolhido
 
-Não consegui abrir o PDF dos Anais neste ambiente. É um arquivo pesado (28 MB), majoritariamente pôsteres em formato imagem, sem camada de texto extraível — tentativa de extração bruta confirmou isso. A ferramenta que renderizaria as páginas (`poppler-utils`) não está instalada e não há privilégio de root para instalar. Também não há como pedir o PDF inteiro pela internet: o arquivo excede o limite de tamanho da ferramenta de busca web.
+| | |
+|---|---|
+| **Título** | CyberLeak: Análise de Padrões de Segurança Digital |
+| **Autores** | Anthony Gabriel Kuhnen Rodrigues, Bouchra Assad Akl Abou-Itaif, Guilherme Narde da Lapa, Gustavo Piegat Glizt da Silva, Jean Felipe Moschen Buss, Vinícius Gabriel Aquino Ferreira (acadêmicos de Engenharia de Software); Larissa Daiana de Almeida Barbado (mentora); Ruminiki Schmoeller e Isabel Fernandes de Souza (docentes) |
+| **Fonte** | Anais da XI Mostra de Projetos Integradores de Extensão, Descomplica/Uniamérica |
+| **Páginas** | 65 a 70 (numeração impressa no rodapé do PDF; o intervalo 68–73 inicialmente estimado estava perto, mas não exato) |
+| **Anexo neste repositório** | [`pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf`](pex-context/CyberLeak%20-%20artigo%20escolhido%20%28Anais%20XI%20Mostra%2C%20p.65-70%29.pdf) |
 
-**Duas saídas possíveis:**
-
-- [ ] Você abre o PDF diretamente (mais rápido — é conteúdo visual, melhor de folhear do que de extrair texto) e me passa o título/área do artigo escolhido, ligado a ADS. A partir disso eu ajudo a escrever ODS, atividade realizada e conclusões.
-- [ ] Ou você instala `poppler-utils` na sua máquina e me indica a página exata do artigo, se preferir que eu tente ler diretamente.
+**Do que trata:** projeto que atende a uma demanda de um Centro Especializado em Segurança Cibernética. Consolida e analisa dados de vazamentos de credenciais (e-mails e senhas) usando princípios de Business Intelligence, culminando numa dashboard interativa em Power BI. A base de dados vem da API do **Have I Been Pwned (HIBP)** — 773 milhões de registros vazados — a mesma referência já usada na pesquisa deste repositório para a linha `projeto/blindagem`.
 
 ---
 
-## Campos a preencher (assim que o artigo for escolhido)
+## Campos a preencher — respostas com base no artigo real
 
-- [ ] **ODS trabalhado**: depende do artigo escolhido — cada um dos 17 ODS tem foco diferente (educação, saúde, redução de desigualdades, cidades sustentáveis, etc.); o artigo deve indicar isso, ou é possível inferir da atividade descrita nele
-- [ ] **Atividade que foi realizada**: descrição do que o projeto do artigo escolhido efetivamente fez — não é uma atividade sua, é a do trabalho que você está resenhando
-- [ ] **Suas conclusões**: reflexão pessoal sobre o que o artigo mostrou e por que importa — aqui sim cabe voz própria, ao contrário dos itens acima que são descritivos
-- [ ] **Anexo**: o artigo escolhido, extraído dos Anais (print das páginas ou export, conforme o que a plataforma aceitar)
+**ODS trabalhado:**
+
+**ODS 9 — Indústria, Inovação e Infraestrutura**, como leitura principal: o projeto constrói uma ferramenta tecnológica (pipeline de dados + banco PostgreSQL + dashboard Power BI) para fortalecer a infraestrutura de segurança digital, o que se encaixa diretamente na meta de fomentar inovação e infraestrutura tecnológica resiliente.
+
+Leitura secundária defensável: **ODS 16 — Paz, Justiça e Instituições Eficazes**, cuja meta 16.10 trata de proteger o acesso à informação e liberdades fundamentais — aplicável porque o projeto atende diretamente a uma instituição de segurança e mira reduzir dano causado por vazamento de dado pessoal. Se o seu curso ou a monitoria tiver preferência por um dos dois, use esse; do contrário, ODS 9 é a escolha mais direta.
+
+**Atividade que foi realizada** *(descrição do que o projeto do artigo fez — não é atividade sua)*:
+
+O projeto atendeu a uma demanda de um Centro Especializado em Segurança Cibernética para consolidar e analisar dados de vazamentos de credenciais. A equipe coletou arquivos de texto com credenciais vazadas e desenvolveu um script em Python que percorre cada linha, identifica URLs (armazenadas como domínio) e separa e-mail de nome de usuário. As senhas foram criptografadas antes de entrarem no banco, e cada uma foi classificada por força (muito fraca a muito forte) usando a biblioteca `zxcvbn`, que também gera alertas do tipo "data facilmente adivinhável". Os dados — e-mail, usuário, domínio, senha, classificação — foram armazenados num banco PostgreSQL modelado como data warehouse em esquema estrela, com três tabelas fato separadas (e-mails, senhas, fontes de vazamento), especificamente para que nenhuma consulta consiga associar diretamente um e-mail à sua senha, mesmo que uma das tabelas seja comprometida. Esse banco alimenta uma dashboard interativa no Power BI, que permite buscar credenciais específicas, visualizar a distribuição de vazamentos por ano, por domínio afetado (destaque para verificações.io e facebook.com) e por categoria de dado exposto, usando como base 773 milhões de registros da API do Have I Been Pwned.
+
+**Suas conclusões** *(aqui cabe voz própria)*:
+
+O CyberLeak me chamou atenção porque dialoga direto com um tema que já venho estudando por conta própria: como transformar exposição de dados vazados em algo acionável, sem comprometer ainda mais a privacidade de quem já foi exposto. O que mais me impressionou na solução foi a decisão de separar e-mails e senhas em tabelas fato distintas dentro de um modelo estrela — uma escolha de modelagem que, por design, torna impossível reconstruir a associação entre credencial e senha mesmo que uma tabela seja comprometida. É o tipo de decisão que prioriza segurança desde a concepção do sistema, não como algo adicionado depois.
+
+Também achei relevante o uso da API do Have I Been Pwned como fonte de dados: é a mesma referência que venho usando nas minhas próprias pesquisas sobre exposição de credenciais no Brasil, o que reforça que o problema que o CyberLeak ataca é real e amplamente reconhecido no mercado de segurança da informação. 773 milhões de registros vazados só nessa base mostram a escala do problema.
+
+O projeto me deixou refletindo sobre até onde uma ferramenta de consulta de vazamento deveria ir. O CyberLeak resolve bem o problema de mapear e visualizar padrões — quais domínios vazam mais, quais senhas são mais fracas — mas isso é diferente de orientar a pessoa comum sobre o que fazer diante da própria exposição. É justamente essa lacuna, entre saber que os dados vazaram e saber como agir, que venho explorando num projeto pessoal de extensão em paralelo aos estudos.
+
+**Anexo:** o PDF com as páginas 65–70 já está salvo em `pex-context/` (link na tabela acima) — anexe esse arquivo na entrega da plataforma.
 
 ---
 
 ## Antes de enviar
 
-- [ ] Escolher o artigo real dentro do Anais da XI Mostra, na área de ADS
-- [ ] Preencher os quatro campos acima com base no artigo escolhido
+- [ ] Reler as conclusões e ajustar ao seu estilo de escrita (mesma observação de sempre: releia antes de assumir como pronto)
+- [ ] Decidir entre ODS 9 e ODS 16 (ou os dois, se a caixa de entrega permitir mais de um) e preencher o campo real na plataforma
 - [ ] Confirmar o mecanismo exato de envio na plataforma (campos separados vs. PDF único) — o roteiro sugere campos separados, mas confirme ao abrir a entrega real
-- [ ] Responder o quiz de fixação (respostas já mapeadas acima, mas confira se as opções batem exatamente com o que aparece na plataforma)
+- [ ] Responder o quiz de fixação (respostas já mapeadas na seção acima, mas confira se as opções batem exatamente com o que aparece na plataforma)
+- [ ] Anexar o PDF do artigo (`pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf`)
 - [ ] Confirmar prazo exato e número de tentativas para esta atividade específica
 - [ ] Não deixar para o último dia do prazo

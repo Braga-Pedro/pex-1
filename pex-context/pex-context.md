@@ -22,3 +22,6 @@ Uma fonte (agregada de busca) afirma que desde 2026.1 o PEX é exclusivo da Plat
 
 ##### Roteiro real do PEX I (27/08/2026)
 `Roteiro_PEX_I_TEORICO.docx_3.pdf` — o roteiro literal da plataforma, "PROJETO DE EXTENSÃO I – CONHECENDO A EXTENSÃO" (Todos os cursos). Confirma que a atividade do PEX I é escolher um artigo dentro dos Anais de Projeto Integrador de Extensão (`uniamerica.br/doc-anais/anais-da-xi-mostra.pdf`, não SciELO/CAPES/genérico), preencher ODS + atividade realizada + conclusões + anexo, e responder um quiz de 3 questões de fixação. Substitui a estrutura genérica assumida em `PEX1-RELATORIO.md` antes desta data — ver aviso no topo daquele arquivo.
+
+##### Artigo escolhido do PEX I: CyberLeak (27/08/2026)
+`CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf` — recorte das páginas 65 a 70 dos Anais da XI Mostra, contendo o artigo "CyberLeak: Análise de Padrões de Segurança Digital" (acadêmicos de Engenharia de Software, Descomplica/Uniamérica). Escolhido para a atividade do PEX I por estar na área de ADS/Tecnologia e por dialogar diretamente com o tema do `projeto/blindagem` (usa a mesma API do Have I Been Pwned já referenciada naquela linha). Conteúdo completo já incorporado em `PEX1-RELATORIO.md`.

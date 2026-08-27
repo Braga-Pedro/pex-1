@@ -64,14 +64,11 @@ O roteiro trata isso como um quiz de múltipla escolha, separado da atividade ac
 
 ## Campos a preencher — respostas com base no artigo real
 
-**ODS trabalhado:**
+**ODS trabalhado: ODS 9 — Indústria, Inovação e Infraestrutura**
 
-| ODS | O que significa (texto oficial da ONU) | Por que se aplica ao CyberLeak |
-|---|---|---|
-| **9 — Indústria, Inovação e Infraestrutura** *(leitura principal)* | "Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação." Cobre infraestrutura física e também tecnológica/digital — acesso a TI, pesquisa e desenvolvimento, inovação em geral. | O projeto **constrói** uma peça de infraestrutura tecnológica (pipeline de dados + banco + dashboard) para fortalecer a capacidade de resposta a ameaças digitais. É inovação aplicada à infraestrutura de segurança. |
-| **16 — Paz, Justiça e Instituições Eficazes** *(leitura alternativa)* | "Promover sociedades pacíficas e inclusivas... construir instituições eficazes, responsáveis e inclusivas." Meta 16.10 trata especificamente de proteger o acesso à informação e as liberdades fundamentais. | Vazamento de dado ameaça um direito fundamental (privacidade). A ferramenta ajuda a identificar e mitigar esse dano, o que protege esse direito. |
+Texto oficial da ONU: "Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação." Cobre infraestrutura física e também tecnológica/digital: acesso a TI, pesquisa e desenvolvimento, inovação em geral.
 
-Resumindo a diferença: o ODS 9 enxerga o projeto como *construção de tecnologia*; o ODS 16 enxerga o mesmo projeto como *proteção de direito das pessoas*. Os dois são defensáveis — ODS 9 é a leitura mais direta porque o artigo é essencialmente sobre construir uma ferramenta técnica, não sobre política institucional. Use ODS 16 se a monitoria tiver preferência por essa leitura, ou se a caixa de entrega permitir indicar mais de um.
+Por que se aplica ao CyberLeak: o projeto constrói uma peça de infraestrutura tecnológica (pipeline de dados, banco de dados, dashboard) para fortalecer a capacidade de resposta a ameaças digitais. É inovação aplicada diretamente à infraestrutura de segurança.
 
 **Atividade que foi realizada** *(descrição do que o projeto do artigo fez — não é atividade sua)*:
 
@@ -92,7 +89,7 @@ O projeto me deixou refletindo sobre até onde uma ferramenta de consulta de vaz
 ## Antes de enviar
 
 - [ ] Reler as conclusões e ajustar ao seu estilo de escrita (mesma observação de sempre: releia antes de assumir como pronto)
-- [ ] Decidir entre ODS 9 e ODS 16 (ou os dois, se a caixa de entrega permitir mais de um) e preencher o campo real na plataforma
+- [x] ODS definido: ODS 9 — Indústria, Inovação e Infraestrutura
 - [x] Mecanismo de envio confirmado: **PDF único**, não campos separados
 - [ ] Montar esse PDF: uma capa/texto com ODS + atividade realizada + conclusões (conteúdo já pronto acima), seguido das páginas do artigo escolhido (`pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf`) — juntar num único arquivo antes de enviar. Ferramentas simples pra isso: Word/Google Docs para o texto, exportar como PDF, e usar um combinador de PDF (ilovepdf.com, Smallpdf, ou o próprio Adobe/Preview) para juntar com o PDF do artigo
 - [ ] Responder o quiz de fixação (respostas já mapeadas na seção acima, mas confira se as opções batem exatamente com o que aparece na plataforma)

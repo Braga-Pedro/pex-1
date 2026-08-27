@@ -5,7 +5,7 @@ Espaço de trabalho para organizar a conclusão dos **Projetos de Extensão** do
 **Não é um projeto de software.** É contexto institucional + notas de planejamento. O código, quando existir, vive nas branches de projeto.
 
 **Situação atual:** 5º semestre, 0 de 6 PEX entregues
-**Data de referência:** 25/08/2026
+**Data de referência:** 27/08/2026
 
 > ⚠️ As regras abaixo foram conferidas contra as páginas oficiais da Descomplica (links no fim). Onde houver divergência com os PDFs em [`pex-context/`](pex-context/), **o roteiro que aparece no seu perfil na plataforma vence** — ele é individualizado por aluno, curso e período.
 
@@ -96,16 +96,33 @@ A regra antiga da Workalove de **"1 tentativa única, sem edição depois do env
 - [ ] Verificar se há algum PEX em situação de **DP**. Se sim, abrir chamado em Serviços **imediatamente** — o deferimento tem fila e não está sob seu controle
 - [ ] Na dúvida sobre o enunciado específico: assistente virtual da plataforma, a **monitoria semanal exclusiva de PEX** (link de acesso enviado por e-mail — confirme se é a mesma dos encontros de segunda-feira já referenciados aqui, ou uma turma própria) ou chamado com o tutor. Qualquer um deles vale mais que os PDFs em `pex-context/`
 
-### PEX 1 — passo a passo
+### PEX 1 — passo a passo (roteiro real, confirmado em 27/08/2026)
 
-- [ ] Escolher artigo/texto da área de ADS
-- [ ] **Fichar durante a leitura**: do que trata / por que escolhi / como conecta com o curso
-- [ ] Escrever o resumo **com palavras próprias** — problema abordado, proposta discutida, relevância para ADS
-- [ ] Responder as perguntas do roteiro (tipicamente 3), respondendo **exatamente o que foi perguntado**
-- [ ] Anexar a evidência do artigo (print / PDF / link), conforme o roteiro pedir
-- [ ] Montar o PDF único → enviar → marcar a declaração de autoria
+> A estrutura abaixo substitui a versão anterior deste documento (resumo + 3 perguntas abertas + fontes como SciELO/CAPES/IEEE). Aquilo era estrutura genérica assumida sem o roteiro em mãos. **O roteiro real chegou** — arquivo `pex-context/Roteiro_PEX_I_TEORICO.docx_3.pdf`, "PROJETO DE EXTENSÃO I – CONHECENDO A EXTENSÃO" (Todos os cursos) — e pede outra coisa.
 
-Onde buscar material: Google Acadêmico, SciELO, Periódicos CAPES, ACM Digital Library, IEEE Xplore — ou capítulos da bibliografia do curso (Pressman, Sommerville, Tanenbaum), se o roteiro aceitar.
+O roteiro é um documento geral de todos os cursos, explicando o que é o PEX, por que existe (Resolução n° 7/2018: mínimo 10% dos créditos curriculares em programas de extensão), os ODS da ONU, e que cada PEX tem roteiro próprio por semestre. **A atividade concreta do PEX I é bem mais restrita** do que o padrão de "escolha qualquer artigo acadêmico":
+
+- [ ] Acessar os **Anais de Projeto Integrador de Extensão da Descomplica/Uniamérica** — o roteiro aponta `uniamerica.br/doc-anais/anais-da-xi-mostra.pdf`. **A fonte do artigo é essa coletânea especificamente, não SciELO, CAPES, Google Acadêmico ou qualquer banco acadêmico genérico** — isso invalida a sugestão de fontes que estava aqui antes.
+- [ ] Escolher, dentro dos Anais, um artigo **na área de conhecimento do seu curso** (ADS)
+- [ ] Ler com atenção
+- [ ] Preencher, nas caixas de entrega da plataforma: **ODS trabalhado**, **a atividade que foi realizada** (a do artigo escolhido, não uma atividade sua), **suas conclusões**, e **anexar o artigo escolhido**
+
+Não há, no roteiro real, resumo redigido livremente nem perguntas abertas do tipo "por que escolheu / o que aprendeu / como aplicaria". O roteiro também **não menciona PDF único obrigatório** para essa atividade — parece ser preenchimento direto em campos da plataforma, com o artigo como anexo. Confirme isso ao abrir a caixa de entrega real.
+
+### Questões de fixação (múltipla escolha, respondíveis pelo próprio texto do roteiro)
+
+O roteiro trata isso como quiz separado da atividade acima. Respostas com base direta no texto do roteiro:
+
+1. *"Qual é o principal objetivo dos projetos de extensão universitária?"* → **(a)** Aplicar o conhecimento acadêmico em situações reais, promovendo uma troca entre a instituição de ensino e a comunidade. *(o roteiro diz literalmente: "os projetos de extensão têm como foco principal a aplicação prática do conhecimento em prol da sociedade... uma ponte entre a teoria estudada em sala de aula e os desafios do mundo real")*
+2. *"Qual das opções melhor define o que é um projeto de extensão universitária?"* → **(a)** É uma iniciativa que leva o conhecimento acadêmico para a comunidade, promovendo uma troca entre saberes científicos e populares. *(o roteiro diz: "iniciativas que visam conectar o conhecimento acadêmico produzido nas universidades com a comunidade externa")*
+3. *"O que são os Objetivos de Desenvolvimento Sustentável (ODS)?"* → **(a)** São metas globais que visam promover o desenvolvimento sustentável em áreas como educação, saúde, meio ambiente, igualdade e erradicação da pobreza até 2030. *(o roteiro cita a ONU: "apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima... a fim de que possamos atingir a Agenda 2030")*
+
+### Pendência: escolher o artigo real dentro dos Anais
+
+Não consegui abrir o PDF dos Anais neste ambiente — é um documento pesado (28 MB), majoritariamente pôsteres em imagem, sem camada de texto extraível, e a ferramenta de renderização de página (`poppler-utils`) não está disponível sem privilégio de root. Duas saídas:
+
+- [ ] Abrir o PDF você mesmo (mais rápido, já que é conteúdo visual) e me passar o título/área do artigo escolhido, ligado a ADS — daí eu ajudo a escrever ODS, atividade e conclusões em cima do que você escolher
+- [ ] Ou instalar `poppler-utils` na sua máquina e me indicar a página exata do artigo, se preferir que eu tente ler
 
 ### PEX 2 em diante — visão geral do formato prático
 

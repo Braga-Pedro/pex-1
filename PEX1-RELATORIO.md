@@ -1,83 +1,78 @@
-# PEX 1 — Rascunho do relatório
+# PEX 1 — Relatório
 
-## Artigo escolhido
+**Fonte:** roteiro real do PEX I, [`pex-context/Roteiro_PEX_I_TEORICO.docx_3.pdf`](pex-context/Roteiro_PEX_I_TEORICO.docx_3.pdf) — "PROJETO DE EXTENSÃO I – CONHECENDO A EXTENSÃO" (Todos os cursos).
+**Data de referência:** 27/08/2026
 
-| | |
-|---|---|
-| **Título** | Lei Geral de Proteção de Dados (LGPD): a relação entre as políticas e os regimes de informação |
-| **Autores** | Nadine Passos Conceição D'Oliveira; Francisco José Aragão Pedroza Cunha |
-| **Periódico** | RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação (indexado na SciELO) |
-| **Ano** | 2024 |
-| **DOI** | [10.20396/rdbci.v22i00.8675749](https://doi.org/10.20396/rdbci.v22i00.8675749) |
-| **Link** | https://www.scielo.br/j/rdbci/a/DWntpkXMB9GgCPKycFcxtts/?lang=pt |
-
-**Referência no padrão ABNT NBR 6023** (formato mais comum exigido em trabalho acadêmico brasileiro; nenhuma das fontes oficiais consultadas confirma se o roteiro do PEX exige especificamente esse padrão — confira no seu roteiro real ou com a monitoria antes de assumir):
-
-> D'OLIVEIRA, Nadine Passos Conceição; CUNHA, Francisco José Aragão Pedroza. Lei Geral de Proteção de Dados (LGPD): a relação entre as políticas e os regimes de informação. **RDBCI: Revista Digital de Biblioteconomia e Ciência da Informação**, Campinas, v. 22, 2024. DOI: 10.20396/rdbci.v22i00.8675749. Disponível em: https://www.scielo.br/j/rdbci/a/DWntpkXMB9GgCPKycFcxtts/?lang=pt. Acesso em: 25 ago. 2026.
-
-*Número do fascículo e páginas exatas não confirmados na consulta; complete a partir da própria página do artigo antes de usar, se o roteiro pedir referência completa.*
-
-**Por que esse artigo.** Une o tema que você já pesquisa a fundo — segurança da informação e proteção de dados, o mesmo pano de fundo da linha `projeto/blindagem` deste repositório — com respaldo acadêmico avaliado (SciELO, DOI). O artigo é de Ciência da Informação, não de Computação estritamente; a ponte com ADS precisa ficar explícita na resposta (já está feita na pergunta 1 abaixo): a LGPD hoje é requisito de projeto de qualquer sistema que trate dado pessoal, que é exatamente o que um desenvolvedor de ADS constrói.
+> Este documento substitui um rascunho anterior (commits `1329df9` a `c118e06` no histórico do git), baseado numa estrutura genérica — resumo em palavras próprias + 3 perguntas abertas, com um artigo da SciELO sobre LGPD. Essa estrutura foi assumida sem o roteiro real em mãos e **não corresponde ao que o roteiro pede de fato**. O rascunho antigo continua no histórico do repositório, mas não deve ser usado para a entrega.
 
 ---
 
-## Resumo
+## O que a atividade pede, de fato
 
-*Rascunho já em palavras próprias — releia e ajuste ao seu estilo antes de enviar; não é para colar direto.*
+O roteiro é um documento geral, válido para todos os cursos, que explica o que é o PEX, por que ele existe (Resolução n° 7/2018 do MEC: mínimo 10% dos créditos curriculares em programas de extensão), os 17 ODS da ONU, e que cada curso tem um roteiro próprio a cada semestre.
 
-O artigo analisa a Lei Geral de Proteção de Dados (Lei 13.709/2018) não apenas como texto jurídico, mas através do conceito de "regime de informação", da Ciência da Informação. Uma forma de olhar como política, informação e poder se relacionam dentro de uma sociedade. Nessa perspectiva, um regime de informação é formado por atores sociais (quem produz e usa a informação), por dispositivos (as regras que definem o que pode e o que não pode), por artefatos (a tecnologia envolvida) e por ações de informação (como os dados efetivamente circulam entre as partes).
+A atividade concreta do PEX I ("Atividade Proposta para PEX I") é:
 
-Os autores mostram que a LGPD funciona como um desses dispositivos, ela define papéis específicos para cada parte envolvida no tratamento de um dado pessoal. O titular (a pessoa a quem o dado pertence), o controlador (quem decide o que fazer com o dado), o operador (quem executa esse tratamento por conta do controlador), o encarregado (o intermediário entre a empresa, o titular e a Autoridade Nacional de Proteção de Dados) e a própria ANPD, como fiscalizadora. O conceito central que sustenta tudo isso é o da **autodeterminação informacional**: a ideia de que é a pessoa quem decide o que acontece com os próprios dados, não a empresa que os coletou.
+1. Acessar os **Anais de Projeto Integrador de Extensão da Descomplica/Uniamérica**, apontados pelo roteiro em `uniamerica.br/doc-anais/anais-da-xi-mostra.pdf`.
+2. Escolher, dentro dessa coletânea, um artigo **na área de conhecimento do seu curso** (ADS).
+3. Ler com atenção.
+4. Preencher, nas caixas de entrega da plataforma, quatro itens: **ODS trabalhado**, **a atividade que foi realizada** (a do artigo escolhido), **suas conclusões**, e **anexar o artigo escolhido**.
 
-O artigo também descreve o **ciclo de vida de um dado pessoal em cinco fases**: coleta, retenção, processamento, compartilhamento e eliminação. Mostra que a LGPD amplia bastante o que já existia na Lei de Acesso à Informação de 2011, que protegia só dados ligados a intimidade e honra. Hoje qualquer dado pessoal está sob esse guarda-chuva, com atenção redobrada para os chamados dados sensíveis (origem étnica, religião, orientação política, dado biométrico).
+**Ponto importante:** a fonte do artigo é essa coletânea de Anais especificamente — não SciELO, Periódicos CAPES, Google Acadêmico, ACM ou IEEE. Nenhuma dessas fontes genéricas atende ao que o roteiro pede aqui.
 
-Por fim, os autores discutem dois instrumentos que colocam a lei em prática: o **Inventário de Dados Pessoais**, que documenta todo tratamento de dado feito por um sistema ou processo, e o **Relatório de Impacto à Proteção de Dados**, que avalia riscos e as medidas para reduzi-los. A conclusão principal é que a LGPD não deve ser lida como uma lei isolada, mas como parte de uma mudança maior, de um Estado burocrático para o que os autores chamam de Estado informacional, em que o controle sobre dado pessoal virou questão central de política pública.
-
----
-
-## Perguntas do roteiro
-
-*Estrutura genérica — confirme contra o roteiro real do seu perfil antes de enviar.*
-
-### 1. Por que você escolheu esse artigo e como ele se conecta à sua área de formação?
-
-Escolhi esse artigo porque segurança da informação e proteção de dados é um tema que já estudo com profundidade fora da sala de aula. Venho pesquisando o assunto para um projeto pessoal de tecnologia voltado a proteger pessoas contra exposição de dados e os golpes que exploram essa exposição. O artigo aprofunda exatamente o arcabouço legal que qualquer sistema de tecnologia que lida com dado pessoal, de um e-commerce a um aplicativo de banco, precisa respeitar hoje. Em ADS, não existe mais projetar um sistema sem levar a LGPD em conta: ela define quem pode acessar o quê, por quanto tempo um dado pode ficar armazenado, e que direitos o usuário tem sobre a própria informação. Entender a lei pela lente dos "regimes de informação" ajudou a enxergar que não é uma exigência burocrática isolada, mas parte de como a própria relação entre empresa, usuário e Estado está sendo redesenhada.
-
-### 2. Quais os principais aprendizados/conceitos que você extraiu da leitura?
-
-- **Autodeterminação informacional**: o titular do dado, a pessoa, é quem deveria estar no centro da decisão sobre o próprio dado, não a empresa que o coletou.
-- **Ciclo de vida do dado pessoal** (coleta → retenção → processamento → compartilhamento → eliminação): um jeito prático de pensar onde, em cada etapa de um sistema, existe risco e responsabilidade.
-- **A diferença entre controlador, operador e encarregado**: até ler o artigo, tratava esses termos como sinônimos. São papéis com responsabilidade jurídica diferente, e um sistema bem desenhado precisa deixar claro qual papel cada parte exerce.
-- **Inventário de Dados Pessoais e Relatório de Impacto à Proteção de Dados**: instrumentos concretos, não só princípios abstratos. Documentos que uma equipe de desenvolvimento efetivamente produz e mantém.
-
-### 3. Como você aplicaria (ou já aplica) esse conhecimento na prática profissional?
-
-Já aplico boa parte desse conhecimento num projeto pessoal de tecnologia que venho desenvolvendo: um assistente que orienta pessoas expostas por vazamento de dados sobre o que fazer para se proteger. Uma das decisões centrais do projeto, tomada antes mesmo de ler este artigo, foi não armazenar nenhum dado pessoal identificável do usuário: nem CPF, nem nome, nem telefone. Lendo o artigo, percebi que essa escolha é, na prática, uma aplicação direta da autodeterminação informacional que os autores descrevem. Em vez de pedir para o usuário confiar seus dados a mim, o sistema devolve a decisão para ele: orienta, mas não retém. O conceito de ciclo de vida do dado também mudou como penso a arquitetura. Cada informação que um sistema manipula deveria ter uma resposta clara para "por que ela existe aqui, e quando ela deixa de existir aqui", não só para dado sensível regulado por lei, mas como princípio geral de projeto.
-
-Essa reflexão sobre ciclo de vida do dado também abre espaço para um debate mais recente, que vai além do que o artigo discute diretamente: onde o dado é processado, não só onde é armazenado. O Brasil vem avançando nisso em 2026. O governo federal consolidou a Nuvem Soberana, conduzida pelo Ministério da Gestão e Inovação em parceria com Dataprev e Serpro, e o Ministério da Saúde iniciou a migração do CadSUS (mais de 228 milhões de usuários) e da Rede Nacional de Dados em Saúde para infraestrutura sob controle exclusivo do Estado brasileiro. Também tramita a Política Nacional de Data Centers (PL 1.680/2025), que exige que dado de administração pública, defesa, justiça e segurança seja processado e armazenado exclusivamente em território nacional. O argumento de fundo é que dado processado em servidor no exterior fica sujeito à legislação daquele país, o que fragiliza a jurisdição da própria ANPD sobre ele. Hoje, segundo levantamentos recentes, só cerca de 40% do dado de brasileiros é processado dentro do território nacional. Vale registrar, porém, que a imprensa especializada aponta um limite real: parte do que hoje é chamado de "nuvem soberana" ainda depende de conexão com servidor estrangeiro, então a soberania efetiva ainda está em construção, não é fato consolidado.
+O roteiro não menciona resumo redigido livremente, nem perguntas abertas do tipo "por que escolheu / o que aprendeu / como aplicaria" — isso pertencia à estrutura genérica assumida antes. Também não menciona PDF único obrigatório para esta atividade especificamente; parece ser preenchimento direto de campos na plataforma, com o artigo como anexo. **Confirme isso ao abrir a caixa de entrega real**, porque pode haver detalhe de formatação não capturado no texto do roteiro.
 
 ---
 
-## Fontes complementares (parágrafo de soberania de dados, resposta 3)
+## Questões de fixação
 
-Usadas para verificar os dados antes de escrever — não fazem parte do artigo resumido, sustentam só a extensão pessoal da resposta 3:
+O roteiro trata isso como um quiz de múltipla escolha, separado da atividade acima — três perguntas, respondíveis diretamente pelo próprio texto do roteiro:
 
-- [Soberania Digital: Brasil consolida a Nuvem de Governo](https://agenciagov.ebc.com.br/noticias/202509/na-soberania-digital-brasil-consolida-a-nuvem-de-governo-como-passo-para-a-independencia-e-a-protecao-de-dados) — Agência Gov
-- [Brasil terá Nuvem Soberana para dados de saúde do SUS](https://www.otempo.com.br/politica/governo/2026/8/13/brasil-tera-nuvem-soberana-para-dados-de-saude-do-sus-saiba-o-que-muda) — O Tempo
-- [Saúde inicia migração de dados do SUS para nuvem nacional](https://agenciabrasil.ebc.com.br/saude/noticia/2026-08/saude-inicia-migracao-de-dados-do-sus-para-nuvem-nacional) — Agência Brasil
-- [Comissão da Câmara aprova Política Nacional de Data Centers](https://www.camara.leg.br/noticias/1281894-comissao-aprova-proposta-que-cria-a-politica-nacional-de-data-center-e-prioriza-acesso-a-energia) — Portal da Câmara dos Deputados
+**1. Com base na leitura sugerida do Manual de Projeto de Extensão, qual é o principal objetivo dos projetos de extensão universitária?**
+
+**Resposta: (a)** Aplicar o conhecimento acadêmico em situações reais, promovendo uma troca entre a instituição de ensino e a comunidade.
+
+*Justificativa: o roteiro afirma que "os projetos de extensão têm como foco principal a aplicação prática do conhecimento em prol da sociedade... Esses projetos funcionam como uma ponte entre a teoria estudada em sala de aula e os desafios do mundo real."*
+
+**2. Qual das opções abaixo melhor define o que é um projeto de extensão universitária?**
+
+**Resposta: (a)** É uma iniciativa que leva o conhecimento acadêmico para a comunidade, promovendo uma troca entre saberes científicos e populares.
+
+*Justificativa: o roteiro define PEX como "iniciativas que visam conectar o conhecimento acadêmico produzido nas universidades com a comunidade externa."*
+
+**3. O que são os Objetivos de Desenvolvimento Sustentável (ODS), estabelecidos pela ONU?**
+
+**Resposta: (a)** São metas globais que visam promover o desenvolvimento sustentável em áreas como educação, saúde, meio ambiente, igualdade e erradicação da pobreza até 2030.
+
+*Justificativa: o roteiro cita a ONU diretamente: "apelo global à ação para acabar com a pobreza, proteger o meio ambiente e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade... a fim de que possamos atingir a Agenda 2030."*
 
 ---
 
-## Evidência a anexar
+## Pendência: escolher o artigo real dentro dos Anais
 
-- [ ] Print da página do artigo na SciELO, ou o PDF do artigo, conforme o roteiro pedir
-- [ ] Conferir no roteiro real se ele pede link, print ou PDF — varia por perfil
+Não consegui abrir o PDF dos Anais neste ambiente. É um arquivo pesado (28 MB), majoritariamente pôsteres em formato imagem, sem camada de texto extraível — tentativa de extração bruta confirmou isso. A ferramenta que renderizaria as páginas (`poppler-utils`) não está instalada e não há privilégio de root para instalar. Também não há como pedir o PDF inteiro pela internet: o arquivo excede o limite de tamanho da ferramenta de busca web.
+
+**Duas saídas possíveis:**
+
+- [ ] Você abre o PDF diretamente (mais rápido — é conteúdo visual, melhor de folhear do que de extrair texto) e me passa o título/área do artigo escolhido, ligado a ADS. A partir disso eu ajudo a escrever ODS, atividade realizada e conclusões.
+- [ ] Ou você instala `poppler-utils` na sua máquina e me indica a página exata do artigo, se preferir que eu tente ler diretamente.
+
+---
+
+## Campos a preencher (assim que o artigo for escolhido)
+
+- [ ] **ODS trabalhado**: depende do artigo escolhido — cada um dos 17 ODS tem foco diferente (educação, saúde, redução de desigualdades, cidades sustentáveis, etc.); o artigo deve indicar isso, ou é possível inferir da atividade descrita nele
+- [ ] **Atividade que foi realizada**: descrição do que o projeto do artigo escolhido efetivamente fez — não é uma atividade sua, é a do trabalho que você está resenhando
+- [ ] **Suas conclusões**: reflexão pessoal sobre o que o artigo mostrou e por que importa — aqui sim cabe voz própria, ao contrário dos itens acima que são descritivos
+- [ ] **Anexo**: o artigo escolhido, extraído dos Anais (print das páginas ou export, conforme o que a plataforma aceitar)
+
+---
 
 ## Antes de enviar
 
-- [ ] Reescrever o resumo com suas próprias palavras — já está em rascunho autoral, mas releia e ajuste ao seu estilo; não copiar trechos do artigo (há declaração anti-plágio no envio)
-- [ ] Conferir se as 3 perguntas acima batem com o roteiro real do seu perfil; ajustar quantidade e redação se for diferente
-- [ ] Montar PDF único (resumo + respostas + evidência anexada)
-- [ ] Marcar a declaração de autoria antes de enviar
-- [ ] Não deixar para o último dia do prazo — sobra fôlego pra reenviar se não aprovar de primeira (3 tentativas dentro do prazo, correção em até 24h)
+- [ ] Escolher o artigo real dentro do Anais da XI Mostra, na área de ADS
+- [ ] Preencher os quatro campos acima com base no artigo escolhido
+- [ ] Confirmar o mecanismo exato de envio na plataforma (campos separados vs. PDF único) — o roteiro sugere campos separados, mas confirme ao abrir a entrega real
+- [ ] Responder o quiz de fixação (respostas já mapeadas acima, mas confira se as opções batem exatamente com o que aparece na plataforma)
+- [ ] Confirmar prazo exato e número de tentativas para esta atividade específica
+- [ ] Não deixar para o último dia do prazo

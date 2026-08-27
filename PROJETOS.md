@@ -2,7 +2,7 @@
 
 Este repositório organiza a conclusão do **PEX (Projeto de Extensão)** do curso de ADS. A `main` guarda o contexto institucional comum; **cada linha de projeto vive na própria branch**.
 
-**Data de referência:** 24/08/2026
+**Data de referência:** 25/08/2026
 
 ---
 

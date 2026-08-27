@@ -5,7 +5,7 @@ Espaço de trabalho para organizar a conclusão dos **Projetos de Extensão** do
 **Não é um projeto de software.** É contexto institucional + notas de planejamento. O código, quando existir, vive nas branches de projeto.
 
 **Situação atual:** 5º semestre, 0 de 6 PEX entregues
-**Data de referência:** 24/08/2026
+**Data de referência:** 25/08/2026
 
 > ⚠️ As regras abaixo foram conferidas contra as páginas oficiais da Descomplica (links no fim). Onde houver divergência com os PDFs em [`pex-context/`](pex-context/), **o roteiro que aparece no seu perfil na plataforma vence** — ele é individualizado por aluno, curso e período.
 
@@ -51,17 +51,29 @@ A diferença de veterano segue existindo, só que em outro lugar: **a partir do 
 
 ## Onde entregar
 
-A partir de **2026.1**, veteranos e calouros usam **exclusivamente a Plataforma de Aulas**:
+> ⚠️ **Existe contradição não resolvida entre duas fontes oficiais da Descomplica (checado em 25/08/2026).** Uma delas afirma que, a partir de 2026.1, veteranos e calouros usam exclusivamente a Plataforma de Aulas e que a Workalove saiu de cena para PEX. A própria página oficial da Workalove, porém, afirma que o PEX **continua acessado por ela**. Não dá pra saber, à distância, qual das duas está desatualizada — pode ser que a migração não tenha sido concluída para todo mundo. **Confira as duas antes de decidir onde entregar.**
+
+**Caminho 1 — Plataforma de Aulas:**
 
 ```
 Plataforma de Aulas → Disciplinas → módulo Projeto de Extensão → PEX I
 ```
 
-A Work Love (plataforma de carreiras antiga) saiu de cena. Consequência prática: a regra dela de **"1 tentativa única, sem edição depois do envio" não vale mais**. Textos que mencionam Central de Carreiras ou Work Love estão desatualizados.
+**Caminho 2 — Workalove** (nome correto da plataforma; grafias como "Work Love" ou "Emelec" em versões antigas deste documento estavam erradas):
+
+```
+Workalove → seção "Aprendizagem" → card do projeto do semestre → roteiro, carga horária e data de entrega
+```
+
+**Como resolver a dúvida sem gastar tentativa de envio:** logar nas duas com sua conta e ver em qual delas o PEX I aparece de fato para o seu perfil — é a única fonte que vence qualquer documento (inclusive este). Se aparecer nas duas ou em nenhuma, perguntar na **monitoria semanal exclusiva de PEX** (link por e-mail) resolve mais rápido que qualquer busca.
+
+A regra antiga da Workalove de **"1 tentativa única, sem edição depois do envio"** pode ou não valer ainda, dependendo de qual plataforma for a certa para o seu caso — não assuma nenhuma das duas regras de tentativa (1 única vs. 3) sem confirmar onde o envio realmente acontece.
 
 ---
 
 ## Regras de entrega
+
+> As regras abaixo vêm de fonte oficial da Descomplica sobre reprovação no PEX, sem especificar plataforma. Dado o impasse Plataforma de Aulas × Workalove descrito acima, confirme se elas valem para a plataforma onde seu PEX I realmente está antes de assumir — a regra antiga da Workalove ("1 tentativa, sem edição") pode ainda se aplicar se for ela a plataforma certa para o seu caso.
 
 - **3 tentativas** de envio, todas dentro do prazo. Reprovou na 1ª? Ajusta e reenvia — não espere o semestre seguinte.
 - Correção costuma sair em até **24h**.
@@ -78,8 +90,8 @@ A Work Love (plataforma de carreiras antiga) saiu de cena. Consequência prátic
 
 **Faça isso antes de escrever qualquer linha.** É o que define todo o resto.
 
-- [ ] Abrir Plataforma de Aulas → Disciplinas → Projeto de Extensão → **PEX I**
-- [ ] Ler o **roteiro** do PEX I na Plataforma de Aulas e anotar as perguntas exatas — o formato já está confirmado como relatório teórico, mas o enunciado específico (quantas perguntas, o que cada uma pede) varia por perfil e só está no seu acesso
+- [ ] Checar as **duas plataformas** — Plataforma de Aulas (Disciplinas → Projeto de Extensão → PEX I) e Workalove (Aprendizagem → card do projeto) — para ver em qual delas o PEX I aparece de fato para o seu perfil. Ver a seção "Onde entregar" acima.
+- [ ] Ler o **roteiro** do PEX I na plataforma certa e anotar as perguntas exatas — o formato já está confirmado como relatório teórico, mas o enunciado específico (quantas perguntas, o que cada uma pede) varia por perfil e só está no seu acesso
 - [ ] Anotar o **prazo exato** de entrega
 - [ ] Verificar se há algum PEX em situação de **DP**. Se sim, abrir chamado em Serviços **imediatamente** — o deferimento tem fila e não está sob seu controle
 - [ ] Na dúvida sobre o enunciado específico: assistente virtual da plataforma, a **monitoria semanal exclusiva de PEX** (link de acesso enviado por e-mail — confirme se é a mesma dos encontros de segunda-feira já referenciados aqui, ou uma turma própria) ou chamado com o tutor. Qualquer um deles vale mais que os PDFs em `pex-context/`

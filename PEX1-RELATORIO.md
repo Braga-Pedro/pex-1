@@ -88,11 +88,15 @@ O projeto me deixou refletindo sobre até onde uma ferramenta de consulta de vaz
 
 ## Antes de enviar
 
-- [ ] Reler as conclusões e ajustar ao seu estilo de escrita (mesma observação de sempre: releia antes de assumir como pronto)
+> **Este arquivo é documento de trabalho, não é o que se entrega.** O texto limpo da entrega está em [`PEX1-ENTREGA.md`](PEX1-ENTREGA.md) (versão de leitura) e [`PEX1-ENTREGA.html`](PEX1-ENTREGA.html) (versão para imprimir em PDF). Nada desta página aqui, histórico de rascunho, gabarito do quiz, checklist, deve aparecer no PDF entregue.
+
 - [x] ODS definido: ODS 9 — Indústria, Inovação e Infraestrutura
 - [x] Mecanismo de envio confirmado: **PDF único**, não campos separados
-- [ ] Montar esse PDF: uma capa/texto com ODS + atividade realizada + conclusões (conteúdo já pronto acima), seguido das páginas do artigo escolhido (`pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf`) — juntar num único arquivo antes de enviar. Ferramentas simples pra isso: Word/Google Docs para o texto, exportar como PDF, e usar um combinador de PDF (ilovepdf.com, Smallpdf, ou o próprio Adobe/Preview) para juntar com o PDF do artigo
-- [ ] Responder o quiz de fixação (respostas já mapeadas na seção acima, mas confira se as opções batem exatamente com o que aparece na plataforma)
-- [ ] Anexar o PDF do artigo (`pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf`)
+- [x] Documento de entrega redigido, sem conteúdo interno: `PEX1-ENTREGA.html`
+- [ ] Preencher **RA/matrícula** e **data** no cabeçalho (campos destacados em amarelo no HTML)
+- [ ] Reler as conclusões em voz alta e ajustar o que não soar como você
+- [ ] Gerar o PDF: abrir `PEX1-ENTREGA.html` no navegador, `Ctrl+P` → *Salvar como PDF*, A4, desmarcar "Cabeçalhos e rodapés"
+- [ ] Juntar esse PDF com `pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf` num arquivo só (ilovepdf.com ou Smallpdf, ordem: relatório primeiro, artigo depois)
+- [ ] Responder o quiz de fixação (respostas já mapeadas acima, mas confira se as opções batem com o que aparece na plataforma)
 - [ ] Confirmar prazo exato e número de tentativas para esta atividade específica
 - [ ] Não deixar para o último dia do prazo

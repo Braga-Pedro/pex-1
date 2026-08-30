@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>PEX I — Conhecendo a Extensão</title>
+<style>
+  @page { size: A4; margin: 3cm 2cm 2cm 3cm; }
+
+  :root { color-scheme: light; }
+
+  body {
+    font-family: "Times New Roman", Times, Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+    max-width: 17cm;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    text-align: justify;
+  }
+
+  header { text-align: center; margin-bottom: 2.5rem; }
+
+  h1 {
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin: 0 0 1.75rem;
+    line-height: 1.35;
+  }
+
+  .ident {
+    text-align: left;
+    font-size: 11pt;
+    line-height: 1.6;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: .85rem 0;
+  }
+  .ident div { margin: 0; }
+  .ident strong { font-weight: 700; }
+
+  .fill {
+    background: #ffe9a8;
+    padding: 0 .35em;
+    font-family: inherit;
+  }
+
+  h2 {
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 2rem 0 .85rem;
+    text-align: left;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  p { margin: 0 0 .85rem; text-indent: 1.25cm; }
+  p.noindent, .meta p { text-indent: 0; }
+
+  .meta p { margin: 0 0 .5rem; text-align: left; }
+
+  .ods {
+    text-indent: 0;
+    font-weight: 700;
+    margin: 0 0 .85rem;
+  }
+
+  code {
+    font-family: "Courier New", monospace;
+    font-size: .92em;
+  }
+
+  @media print {
+    body { margin: 0; max-width: none; padding: 0; font-size: 12pt; }
+    .screen-only { display: none !important; }
+    .fill { background: none; border-bottom: 1px solid #000; }
+  }
+
+  .screen-only {
+    margin: 0 0 2.5rem;
+    padding: .9rem 1.1rem;
+    border-left: 3px solid #b58900;
+    background: #fdf6e3;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    text-align: left;
+    text-indent: 0;
+  }
+  .screen-only strong { display: block; margin-bottom: .3rem; }
+</style>
+</head>
+<body>
+
+<div class="screen-only">
+  <strong>Antes de imprimir (este aviso não sai no PDF)</strong>
+  Preencha os campos destacados em amarelo (RA e data). Depois use <b>Ctrl+P → Destino: Salvar como PDF</b>, papel A4, margens padrão, e <b>desmarque</b> "Cabeçalhos e rodapés".
+</div>
+
+<header>
+  <h1>Projeto de Extensão I<br>Conhecendo a Extensão</h1>
+
+  <div class="ident">
+    <div><strong>Aluno:</strong> Pedro Henrique Braga de Lima</div>
+    <div><strong>Curso:</strong> Tecnologia em Análise e Desenvolvimento de Sistemas</div>
+    <div><strong>Instituição:</strong> Centro Universitário União das Américas Descomplica</div>
+    <div><strong>RA / Matrícula:</strong> <span class="fill">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+    <div><strong>Data:</strong> <span class="fill">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+  </div>
+</header>
+
+<h2>1. Artigo selecionado</h2>
+
+<div class="meta">
+  <p><strong>Título:</strong> CyberLeak: Análise de Padrões de Segurança Digital</p>
+  <p><strong>Autores:</strong> Anthony Gabriel Kuhnen Rodrigues, Bouchra Assad Akl Abou-Itaif, Guilherme Narde da Lapa, Gustavo Piegat Glizt da Silva, Jean Felipe Moschen Buss e Vinícius Gabriel Aquino Ferreira (acadêmicos); Larissa Daiana de Almeida Barbado (mentora); Ruminiki Schmoeller e Isabel Fernandes de Souza (docentes).</p>
+  <p><strong>Fonte:</strong> Anais da XI Mostra de Projetos Integradores de Extensão, Centro Universitário União das Américas Descomplica, páginas 65 a 70.</p>
+</div>
+
+<p>Escolhi este artigo por ser um projeto da área de conhecimento do meu curso, Análise e Desenvolvimento de Sistemas, envolvendo engenharia de dados, modelagem de banco de dados e Business Intelligence aplicados à segurança da informação.</p>
+
+<h2>2. ODS trabalhado</h2>
+
+<p class="ods">ODS 9 — Indústria, Inovação e Infraestrutura</p>
+
+<p class="noindent">O objetivo 9 da ONU propõe "construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação". Além da infraestrutura física, ele abrange a infraestrutura tecnológica e digital, incluindo acesso à tecnologia da informação, pesquisa, desenvolvimento e inovação.</p>
+
+<p>O CyberLeak se encaixa nesse objetivo porque constrói uma peça concreta de infraestrutura tecnológica, formada por um pipeline de tratamento de dados, um banco de dados modelado como data warehouse e uma dashboard analítica, com a finalidade de fortalecer a capacidade de resposta de um Centro Especializado em Segurança Cibernética diante de ameaças digitais. É inovação aplicada diretamente à infraestrutura de segurança, tornando resiliente um serviço do qual a comunidade depende.</p>
+
+<h2>3. Atividade que foi realizada</h2>
+
+<p class="noindent">O projeto atendeu a uma demanda real de um Centro Especializado em Segurança Cibernética, que precisava consolidar e analisar dados de vazamentos de credenciais para entender padrões de exposição.</p>
+
+<p>A equipe partiu de arquivos de texto contendo credenciais vazadas e desenvolveu um script em Python responsável por percorrer cada linha do conjunto, identificar as URLs de origem, armazenadas apenas como domínio, e separar o endereço de e-mail do nome de usuário. As senhas foram criptografadas antes de entrar no banco de dados e cada uma recebeu uma classificação de força, indo de muito fraca a muito forte, gerada pela biblioteca <code>zxcvbn</code>, que também emite alertas do tipo "data facilmente adivinhável" quando identifica padrões previsíveis.</p>
+
+<p>Os dados tratados, ou seja, e-mail, nome de usuário, domínio, senha e classificação de força, foram armazenados em um banco PostgreSQL modelado como data warehouse em esquema estrela. A modelagem adotou uma decisão de segurança relevante: três tabelas fato separadas, uma para e-mails, uma para senhas e uma para fontes de vazamento, de forma que nenhuma consulta consiga associar diretamente um e-mail à sua respectiva senha, mesmo que uma das tabelas venha a ser comprometida.</p>
+
+<p>Esse banco alimenta uma dashboard interativa construída em Power BI, que permite consultar credenciais específicas e visualizar a distribuição dos vazamentos por ano, por domínio afetado, com destaque para verificações.io e facebook.com, e por categoria de dado exposto. A base de referência do trabalho foi a API do Have I Been Pwned, que reúne cerca de 773 milhões de registros de credenciais vazadas.</p>
+
+<h2>4. Conclusões</h2>
+
+<p class="noindent">O CyberLeak me chamou atenção porque dialoga direto com um tema que já venho estudando por conta própria: como transformar a exposição de dados vazados em algo acionável, sem comprometer ainda mais a privacidade de quem já foi exposto.</p>
+
+<p>O que mais me impressionou na solução foi a decisão de separar e-mails e senhas em tabelas fato distintas dentro do modelo estrela. É uma escolha de modelagem que, por si só, torna impossível reconstruir a associação entre credencial e senha ainda que uma das tabelas seja comprometida. Esse tipo de decisão prioriza segurança desde a concepção do sistema, e não como algo acrescentado depois que o problema aparece. Como estudante de Análise e Desenvolvimento de Sistemas, foi o ponto do artigo que mais me fez repensar a forma como costumo modelar dados sensíveis.</p>
+
+<p>Também achei relevante o uso da API do Have I Been Pwned como fonte de dados. É a mesma referência que venho consultando em pesquisas próprias sobre exposição de credenciais no Brasil, o que reforça que o problema atacado pelo CyberLeak é real e amplamente reconhecido no mercado de segurança da informação. Os 773 milhões de registros presentes só nessa base dão a dimensão da escala do problema.</p>
+
+<p>Por fim, o projeto me deixou refletindo sobre até onde uma ferramenta de consulta de vazamento deveria ir. O CyberLeak resolve bem o problema de mapear e visualizar padrões, mostrando quais domínios vazam mais e quais senhas são mais frágeis, mas isso ainda é diferente de orientar a pessoa comum sobre o que fazer diante da própria exposição. É justamente essa lacuna, entre saber que os dados vazaram e saber como agir, que pretendo explorar nos próximos projetos de extensão do curso.</p>
+
+<p>Vejo aqui exatamente a ponte entre universidade e sociedade que o roteiro descreve: um conhecimento técnico que existia dentro da academia, aplicado a uma demanda concreta de uma organização externa, gerando um resultado que essa organização não teria produzido sozinha.</p>
+
+<h2>5. Anexo</h2>
+
+<p class="noindent">Artigo selecionado, CyberLeak: Análise de Padrões de Segurança Digital, Anais da XI Mostra de Projetos Integradores de Extensão, páginas 65 a 70, anexado a este documento.</p>
+
+</body>
+</html>

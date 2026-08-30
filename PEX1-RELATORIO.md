@@ -93,7 +93,7 @@ O projeto me deixou refletindo sobre até onde uma ferramenta de consulta de vaz
 - [x] ODS definido: ODS 9 — Indústria, Inovação e Infraestrutura
 - [x] Mecanismo de envio confirmado: **PDF único**, não campos separados
 - [x] Documento de entrega redigido, sem conteúdo interno: `PEX1-ENTREGA.html`
-- [ ] Preencher **RA/matrícula** e **data** no cabeçalho (campos destacados em amarelo no HTML)
+- [x] Cabeçalho preenchido: RA 2443545, data 30/08/2026 (ajustar a data se enviar em outro dia)
 - [ ] Reler as conclusões em voz alta e ajustar o que não soar como você
 - [ ] Gerar o PDF: abrir `PEX1-ENTREGA.html` no navegador, `Ctrl+P` → *Salvar como PDF*, A4, desmarcar "Cabeçalhos e rodapés"
 - [ ] Juntar esse PDF com `pex-context/CyberLeak - artigo escolhido (Anais XI Mostra, p.65-70).pdf` num arquivo só (ilovepdf.com ou Smallpdf, ordem: relatório primeiro, artigo depois)

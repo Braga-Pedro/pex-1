@@ -4,7 +4,7 @@
 **Curso:** Tecnologia em Análise e Desenvolvimento de Sistemas
 **Instituição:** Centro Universitário União das Américas Descomplica
 **RA / Matrícula:** 2443545
-**Data:** 30/08/2026
+**Data:** 01/09/2026
 
 ---
 
